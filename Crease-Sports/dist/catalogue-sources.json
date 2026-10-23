@@ -1,0 +1,365 @@
+{
+  "purpose": "Product photograph references for this frontend sample catalogue. Prices are illustrative; availability is not asserted.",
+  "items": [
+    {
+      "sport": "cricket",
+      "sourceName": "Asics Gel Peake-3 Cricket Shoes",
+      "brand": "Asics",
+      "image": "product-cricket-9105224270078.jpg",
+      "url": "https://scssports.in/products/asics-gel-peake-3-cricket-shoes",
+      "photo": "https://cdn.shopify.com/s/files/1/0678/5027/3022/files/GEL-PEAKE_3_White-Mednight_2.jpg?v=1792237337",
+      "price": 6799,
+      "type": "Cricket Stud Shoes"
+    },
+    {
+      "sport": "cricket",
+      "sourceName": "Moonwalkr Cricket Thigh Guard 2.0",
+      "brand": "Moonwalkr",
+      "image": "product-cricket-8497373806846.jpg",
+      "url": "https://scssports.in/products/moonwalkr-cricket-thigh-gaurd-2-0",
+      "photo": "https://cdn.shopify.com/s/files/1/0678/5027/3022/files/thigh-guard-black-right-1_1.jpg?v=1738574957",
+      "price": 2204,
+      "type": "Cricket Thigh Guard"
+    },
+    {
+      "sport": "cricket",
+      "sourceName": "Moonwalkr Leg Guards 2.0 Cricket Batting Pads",
+      "brand": "Moonwalkr",
+      "image": "product-cricket-8499164217598.jpg",
+      "url": "https://scssports.in/products/moonwalkr-leg-guards-2-0-cricket-batting-pads",
+      "photo": "https://cdn.shopify.com/s/files/1/0678/5027/3022/files/Leg-Guards-2.0-moonwalkrindia-1683401194_1.jpg?v=1738834678",
+      "price": 1999,
+      "type": "Cricket Batting Pads"
+    },
+    {
+      "sport": "cricket",
+      "sourceName": "Shrey Kare Wheelie Bag Cricket Kitbag",
+      "brand": "Shrey",
+      "image": "product-cricket-8875123638526.png",
+      "url": "https://scssports.in/products/shrey-kare-wheelie-bag-cricket-kitbag",
+      "photo": "https://cdn.shopify.com/s/files/1/0678/5027/3022/files/Untitleddesign-2025-05-05T165742.580.png?v=1761720144",
+      "price": 2399,
+      "type": "Cricket Kitbag"
+    },
+    {
+      "sport": "cricket",
+      "sourceName": "BAS Vampire Players Cricket Batting Gloves",
+      "brand": "BAS",
+      "image": "product-cricket-9114236158206.jpg",
+      "url": "https://scssports.in/products/bas-vampire-players",
+      "photo": "https://cdn.shopify.com/s/files/1/0678/5027/3022/files/Gloves2_4caf9a74-b601-4066-8326-99a39daff090.jpg?v=1781249866",
+      "price": 3869,
+      "type": "Cricket Batting Gloves"
+    },
+    {
+      "sport": "cricket",
+      "sourceName": "Kookaburra Speed Cricket Ball",
+      "brand": "Kookaburra",
+      "image": "product-cricket-8339570950398.jpg",
+      "url": "https://scssports.in/products/kookaburra-speed-cricket-ball-white",
+      "photo": "https://cdn.shopify.com/s/files/1/0678/5027/3022/files/Kookaburra_Speed_Cricket_Ball_fc20ce42-8654-448f-ac94-f3145db7e1b2.jpg?v=1775633957",
+      "price": 1313,
+      "type": "Cricket Ball"
+    },
+    {
+      "sport": "cricket",
+      "sourceName": "Moonwalkr Cricket Arm Guard",
+      "brand": "Moonwalkr",
+      "image": "product-cricket-8644449009918.jpg",
+      "url": "https://scssports.in/products/moonwalkr-cricket-arm-guard",
+      "photo": "https://cdn.shopify.com/s/files/1/0678/5027/3022/files/Arm-Guard-moonwalkrindia-1683401162.jpg?v=1765453184",
+      "price": 809,
+      "type": "Arm Guard"
+    },
+    {
+      "sport": "cricket",
+      "sourceName": "Moonwalkr Mind 2.0 Cricket Helmet",
+      "brand": "Moonwalkr",
+      "image": "product-cricket-9048508530942.png",
+      "url": "https://scssports.in/products/moonwalkr-mind-2-0-cricket-helmet-1",
+      "photo": "https://cdn.shopify.com/s/files/1/0678/5027/3022/files/Artboard1_37243750-85eb-4003-a0a4-20cf2e1d4325.png?v=1783406996",
+      "price": 5804,
+      "type": "Cricket Helmet"
+    },
+    {
+      "sport": "cricket",
+      "sourceName": "Gray-Nicolls Sunhat GN5 Cricket Cap",
+      "brand": "Gray-Nicolls",
+      "image": "product-cricket-8877727514878.png",
+      "url": "https://scssports.in/products/gray-nicolls-sunhat-gn5-cricket-cap",
+      "photo": "https://cdn.shopify.com/s/files/1/0678/5027/3022/files/ssskullplaincap_2.png?v=1746712817",
+      "price": 679,
+      "type": "Cricket Cap"
+    },
+    {
+      "sport": "football",
+      "sourceName": "Nike Pitch Football Ball",
+      "brand": "Nike",
+      "image": "product-football-8711701987582.jpg",
+      "url": "https://scssports.in/products/nike-pitch-football-ball",
+      "photo": "https://cdn.shopify.com/s/files/1/0678/5027/3022/files/WhiteBlue2.webp?v=1759926486",
+      "price": 1345,
+      "type": "Football"
+    },
+    {
+      "sport": "football",
+      "sourceName": "Nike Academy Football Stocking",
+      "brand": "Nike",
+      "image": "product-football-8945668096254.png",
+      "url": "https://scssports.in/products/nike-academy-football-stocking",
+      "photo": "https://cdn.shopify.com/s/files/1/0678/5027/3022/files/Untitleddesign-2025-07-25T113702.181.png?v=1753423884",
+      "price": 535,
+      "type": "Football Stocking"
+    },
+    {
+      "sport": "football",
+      "sourceName": "Nivia Carbonite Crest Football Turf Shoes",
+      "brand": "Nivia",
+      "image": "product-football-9039963914494.jpg",
+      "url": "https://scssports.in/products/nivia-carbonite-crest-football-turf-shoes",
+      "photo": "https://cdn.shopify.com/s/files/1/0678/5027/3022/files/2_b1df0734-517d-4d19-93f4-160fac2eabb9.jpg?v=1781960389",
+      "price": 925,
+      "type": "Football Turf Shoes"
+    },
+    {
+      "sport": "football",
+      "sourceName": "Puma Attacanto FG/AG Football Shoes",
+      "brand": "Puma",
+      "image": "product-football-8450221277438.png",
+      "url": "https://scssports.in/products/puma-attacanto-fg-ag-football-shoes",
+      "photo": "https://cdn.shopify.com/s/files/1/0678/5027/3022/files/1_900x_64c33b76-ad3e-4f70-9ef0-6fde7cc1f035.png?v=1785502596",
+      "price": 2924,
+      "type": "Football Shoes"
+    },
+    {
+      "sport": "football",
+      "sourceName": "SCS Football Jersey Set (Kids)",
+      "brand": "SCS",
+      "image": "product-football-8875163025662.jpg",
+      "url": "https://scssports.in/products/scs-football-set",
+      "photo": "https://cdn.shopify.com/s/files/1/0678/5027/3022/files/Artboard1_46da75ae-d510-47b5-8881-324b47fe2bfb.jpg?v=1746518048",
+      "price": 375,
+      "type": "Apparel"
+    },
+    {
+      "sport": "football",
+      "sourceName": "Nike J Football ShinGuard",
+      "brand": "Nike",
+      "image": "product-football-9060824514814.jpg",
+      "url": "https://scssports.in/products/nike-j-football-shinguard",
+      "photo": "https://cdn.shopify.com/s/files/1/0678/5027/3022/files/Untitleddesign_14_0451d011-747a-4774-95fc-533a21f5924f.jpg?v=1763732601",
+      "price": 805,
+      "type": "Football Shin Guard"
+    },
+    {
+      "sport": "football",
+      "sourceName": "Nivia Mini Football",
+      "brand": "Nivia",
+      "image": "product-football-8934157582590.png",
+      "url": "https://scssports.in/products/nivia-home-play-mini-ball",
+      "photo": "https://cdn.shopify.com/s/files/1/0678/5027/3022/files/ArabianGreenComfortGreyPastelGreyDoubleCream-2025-07-11T124403.724.png?v=1752218389",
+      "price": 153,
+      "type": "Football"
+    },
+    {
+      "sport": "football",
+      "sourceName": "Nivia Ashtang Gold Football Goalkeeper Gloves",
+      "brand": "Nivia",
+      "image": "product-football-9078449864958.jpg",
+      "url": "https://scssports.in/products/nivia-ashtang-gold-football-gk-gloves-1",
+      "photo": "https://cdn.shopify.com/s/files/1/0678/5027/3022/files/81Dxe-ydFdL._SL1500.jpg?v=1784188036",
+      "price": 1799,
+      "type": "Football GoalKeeper Gloves"
+    },
+    {
+      "sport": "football",
+      "sourceName": "Adidas UCL Training  Football",
+      "brand": "Adidas",
+      "image": "product-football-9046717595902.jpg",
+      "url": "https://scssports.in/products/adidas-ucl-training-replica-football",
+      "photo": "https://cdn.shopify.com/s/files/1/0678/5027/3022/files/UCL_Training_25-26_League_Stage_Ball_White_JP1534_01_00_standard.jpg?v=1781961245",
+      "price": 2519,
+      "type": "Football"
+    },
+    {
+      "sport": "badminton",
+      "sourceName": "Yonex Aerosensa 50 Badminton Feather Shuttlecock",
+      "brand": "Yonex",
+      "image": "product-badminton-8293278712062.jpg",
+      "url": "https://scssports.in/products/yonex-aerosensa-50-badminton-feather-shuttlecock",
+      "photo": "https://cdn.shopify.com/s/files/1/0678/5027/3022/files/51QoIao6XIL._SX679.jpg?v=1734098794",
+      "price": 5200,
+      "type": "Badminton Shuttlecock"
+    },
+    {
+      "sport": "badminton",
+      "sourceName": "Yonex BG Exbolt 65 Badminton String",
+      "brand": "Yonex",
+      "image": "product-badminton-8713163636990.jpg",
+      "url": "https://scssports.in/products/yonex-bg-exbolt-65-badminton-string",
+      "photo": "https://cdn.shopify.com/s/files/1/0678/5027/3022/files/yxexblt65.jpg?v=1733212205",
+      "price": 826,
+      "type": "Badminton String"
+    },
+    {
+      "sport": "badminton",
+      "sourceName": "Asics Gel-Rocket 12 Badminton/Squash Shoes",
+      "brand": "Asics",
+      "image": "product-badminton-8946877006078.jpg",
+      "url": "https://scssports.in/products/asics-gel-rocket-12-badminton-shoes",
+      "photo": "https://cdn.shopify.com/s/files/1/0678/5027/3022/files/Untitled_design_1_c8ecb8c7-2788-438a-86b2-c44cde54678f.jpg?v=1783422883",
+      "price": 6374,
+      "type": "Badminton Shoes"
+    },
+    {
+      "sport": "badminton",
+      "sourceName": "Yonex Arcsaber 11 Play Badminton Racket (Strung)",
+      "brand": "Yonex",
+      "image": "product-badminton-8264650588414.jpg",
+      "url": "https://scssports.in/products/yonex-arcsaber-11-play-badminton-racket",
+      "photo": "https://cdn.shopify.com/s/files/1/0678/5027/3022/files/41Yp5dxx5GL._SX679.jpg?v=1765352445",
+      "price": 2795,
+      "type": "Badminton Racket"
+    },
+    {
+      "sport": "badminton",
+      "sourceName": "Yonex Mavis 350 Badminton Nylon Shuttlecock",
+      "brand": "Yonex",
+      "image": "product-badminton-8293242175742.jpg",
+      "url": "https://scssports.in/products/yonex-mavis-350-badminton-nylon-shuttlecock",
+      "photo": "https://cdn.shopify.com/s/files/1/0678/5027/3022/files/badminton-shuttlecock-mavis-350_18_52a11082-63bc-4320-92ab-dc5306eac78c.webp?v=1709716543",
+      "price": 1512,
+      "type": "Badminton Shuttlecock"
+    },
+    {
+      "sport": "badminton",
+      "sourceName": "Yonex Round Neck RM-HO36-2812 Badminton T-Shirt",
+      "brand": "Yonex",
+      "image": "product-badminton-8731013349630.png",
+      "url": "https://scssports.in/products/yonex-round-neck-rm-ho36-2812-badminton-t-shirt",
+      "photo": "https://cdn.shopify.com/s/files/1/0678/5027/3022/files/yonex1_20600552-9aee-436e-a478-2f39922c4c21.png?v=1735034729",
+      "price": 981,
+      "type": "Badminton T-Shirt"
+    },
+    {
+      "sport": "badminton",
+      "sourceName": "Yonex Tech-501B Badminton Overgrip",
+      "brand": "Yonex",
+      "image": "product-badminton-8752529998078.jpg",
+      "url": "https://scssports.in/products/yonex-tech-501b-badminton-overgrip",
+      "photo": "https://cdn.shopify.com/s/files/1/0678/5027/3022/files/Untitleddesign-2026-01-19T182202.802.jpg?v=1768827198",
+      "price": 100,
+      "type": "Badminton Overgrip"
+    },
+    {
+      "sport": "badminton",
+      "sourceName": "Yonex SUNR 23015 BT5 Badminton Kitbag",
+      "brand": "Yonex",
+      "image": "product-badminton-8352787136766.jpg",
+      "url": "https://scssports.in/products/yonex-sunr-23015-bt5-badminton-kitbag",
+      "photo": "https://cdn.shopify.com/s/files/1/0678/5027/3022/files/61wgH6PaFwL._SX679.jpg?v=1712405479",
+      "price": 1043,
+      "type": "Badminton Kitbag"
+    },
+    {
+      "sport": "badminton",
+      "sourceName": "Yonex Nanoflare 1000 Play Badminton Racket",
+      "brand": "Yonex",
+      "image": "product-badminton-8269865058558.jpg",
+      "url": "https://scssports.in/products/yonex-nanoflare-1000-play-badminton-racket",
+      "photo": "https://cdn.shopify.com/s/files/1/0678/5027/3022/files/Nanoflare1000play-2.jpg?v=1765955843",
+      "price": 3450,
+      "type": "Badminton Racket"
+    },
+    {
+      "sport": "fitness",
+      "sourceName": "Adidas Gym Ball 65 CM",
+      "brand": "Adidas",
+      "image": "product-fitness-9227319214334.jpg",
+      "url": "https://scssports.in/products/adidas-gym-ball-65-cm",
+      "photo": "https://cdn.shopify.com/s/files/1/0678/5027/3022/files/91rAOEY_5rL._SL1500.jpg?v=1779085384",
+      "price": 2519,
+      "type": "Gym Ball"
+    },
+    {
+      "sport": "fitness",
+      "sourceName": "Adidas Pilates Resistance Band",
+      "brand": "Adidas",
+      "image": "product-fitness-8585101312254.jpg",
+      "url": "https://scssports.in/products/adidas-pilates-resistance-band",
+      "photo": "https://cdn.shopify.com/s/files/1/0678/5027/3022/files/41glMFl6akL._SY879.jpg?v=1735716730",
+      "price": 1519,
+      "type": "Resistance Band"
+    },
+    {
+      "sport": "fitness",
+      "sourceName": "Adidas Power Tube 1 Resistance Tube",
+      "brand": "Adidas",
+      "image": "product-fitness-8585537683710.jpg",
+      "url": "https://scssports.in/products/adidas-power-tube-1-miscellaneous-resistance-tube",
+      "photo": "https://cdn.shopify.com/s/files/1/0678/5027/3022/files/power-tube-l1-1-1000x1000.jpg?v=1735717104",
+      "price": 1359,
+      "type": "Resistance Tube"
+    },
+    {
+      "sport": "fitness",
+      "sourceName": "Blackroll Resistance Loop Band",
+      "brand": "Blackroll",
+      "image": "product-fitness-9228096962814.jpg",
+      "url": "https://scssports.in/products/blackroll-resistance-loop-band",
+      "photo": "https://cdn.shopify.com/s/files/1/0678/5027/3022/files/BR_2019-05_LOOP-BAND_b_00587_C2_A9Sebastian-Sch_C3_B6ffel.jpg?v=1779103019",
+      "price": 1709,
+      "type": "Resistance Band"
+    },
+    {
+      "sport": "fitness",
+      "sourceName": "Body Solid GFID-31 Flat Incline Decline Bench",
+      "brand": "Body Solid",
+      "image": "product-fitness-9121545650430.png",
+      "url": "https://scssports.in/products/body-solid-gfid-31-flat-incline-decline-bench",
+      "photo": "https://cdn.shopify.com/s/files/1/0678/5027/3022/files/1_1d16b90e-dcfc-462d-8203-49ac972d6752.png?v=1769767249",
+      "price": 33000,
+      "type": "Bench"
+    },
+    {
+      "sport": "fitness",
+      "sourceName": "Cockatoo Exercise Fabric Hip Band",
+      "brand": "Cockatoo",
+      "image": "product-fitness-8585722724606.jpg",
+      "url": "https://scssports.in/products/cockatoo-exercise-band-fabric-hip",
+      "photo": "https://cdn.shopify.com/s/files/1/0678/5027/3022/files/71iBROyzZCL._SL1500_1.jpg?v=1720524220",
+      "price": 449,
+      "type": "Yoga Accessories"
+    },
+    {
+      "sport": "fitness",
+      "sourceName": "Cockatoo Gymnastic Ring",
+      "brand": "Cockatoo",
+      "image": "product-fitness-8585789079806.jpg",
+      "url": "https://scssports.in/products/cockatoo-gymnastic-ring",
+      "photo": "https://cdn.shopify.com/s/files/1/0678/5027/3022/files/25-500x500-1_1.jpg?v=1720528916",
+      "price": 2909,
+      "type": "Gym Accessories"
+    },
+    {
+      "sport": "fitness",
+      "sourceName": "Cockatoo Yoga Pilate Ring",
+      "brand": "Cockatoo",
+      "image": "product-fitness-8585597387006.jpg",
+      "url": "https://scssports.in/products/cockatoo-yoga-pilate-ring",
+      "photo": "https://cdn.shopify.com/s/files/1/0678/5027/3022/files/61UTGp9fw4L._SL1400_-500x500-1_1.jpg?v=1735721722",
+      "price": 1029,
+      "type": "Yoga Accessories"
+    },
+    {
+      "sport": "fitness",
+      "sourceName": "Konex CLS-1236 Yoga Brick",
+      "brand": "Konex",
+      "image": "product-fitness-8880279650558.png",
+      "url": "https://scssports.in/products/s348186",
+      "photo": "https://cdn.shopify.com/s/files/1/0678/5027/3022/files/rn-image_picker_lib_temp_a7406ad3-c1ce-4445-869d-c6991f36e58f.png?v=1747035879",
+      "price": 359,
+      "type": "Yoga Accessories"
+    }
+  ]
+}

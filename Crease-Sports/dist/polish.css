@@ -1,0 +1,57 @@
+/* Final image framing and deliberate, restrained motion. */
+.story-opening-photo{padding:0;height:430px;isolation:isolate;border-radius:24px;background:var(--surface);overflow:hidden;box-shadow:0 14px 32px #152b2010;transition:transform .4s ease,box-shadow .4s ease}
+.story-opening-photo:before{content:none!important;display:none!important}
+.story-opening-photo img{border-radius:0;object-fit:cover;object-position:50% 42%;transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .5s}
+.story-opening-photo figcaption{position:absolute;bottom:18px;inset-inline:18px;background:#183b2be8;border:1px solid #ffffff3d;border-radius:10px;color:#fff6e6;padding:13px 16px;letter-spacing:.07em;text-align:center;font-size:10px;line-height:1.5;z-index:1}
+.shop-equipment-stage{min-height:445px;grid-template-columns:minmax(190px,.85fr) minmax(200px,1fr);gap:25px;align-items:center}
+.shop-stage-main,.shop-stage-small{height:auto!important;max-height:none;aspect-ratio:auto;margin:0!important;position:relative;display:block;box-shadow:0 12px 28px #1634240c;transition:transform .45s ease,box-shadow .45s ease;border-radius:18px;isolation:isolate}
+.shop-stage-main{width:min(100%,230px);justify-self:center;align-self:start}.shop-stage-small{width:100%;align-self:center;margin-bottom:34px!important}
+.shop-equipment-stage .shop-stage-main img,.shop-equipment-stage .shop-stage-small img{display:block;width:100%;height:auto;padding:0;object-fit:contain;object-position:center}
+.shop-equipment-stage .shop-stage-main img{aspect-ratio:474/842}.shop-equipment-stage .shop-stage-small img{aspect-ratio:3/2}
+.shop-equipment-stage figcaption{position:static;padding:12px 14px;background:#fff;color:#183b2b;font-family:var(--body);font-size:9px;line-height:1.45;letter-spacing:.08em}
+.shop-stage-note{bottom:0;inset-inline-end:5px;font-size:27px;pointer-events:none}
+.squad-opening-photo{overflow:hidden;isolation:isolate}.squad-opening-photo img{object-fit:cover;object-position:62% 50%;transition:transform .8s cubic-bezier(.2,.7,.2,1),filter .5s}.squad-opening-photo figcaption{inset-inline:22px;bottom:22px;border-radius:12px;z-index:1}
+.home2-training-hero .home2-film-stage{height:auto;aspect-ratio:auto;overflow:hidden;border-radius:20px;display:flex;flex-direction:column;box-shadow:0 18px 35px #0002;transition:transform .4s ease,box-shadow .4s ease}
+.home2-training-hero .home2-film-stage .hero-video{position:static;height:auto;width:100%;aspect-ratio:16/9;object-fit:contain;opacity:1}
+.home2-training-hero .home2-film-stage>span{position:static;display:block;padding:15px 16px;margin:0;border:0;border-radius:0;background:#122a20;line-height:1.5;font-size:9px;letter-spacing:.1em}
+.contact-opening-photo,.service-detail-visual,.services-mosaic figure{overflow:hidden;transition:transform .4s ease,box-shadow .4s ease;will-change:auto}
+.contact-opening-photo img,.service-detail-visual img,.services-mosaic figure img{transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .4s;transform-origin:center}
+.contact-opening-photo img{object-position:50% 40%}.service-detail-visual img{object-position:50% 40%}
+.service-detail-2 .service-detail-visual img{object-position:50% 52%}.service-detail-3 .service-detail-visual img{object-position:50% 45%}
+/**** Image/card feedback: full products keep their silhouettes; lifestyle photos can move inside clipped frames. ****/
+.brand-directory-card{transition:transform .35s ease,box-shadow .35s ease,border-color .35s ease}.brand-equipment img{transition:transform .55s cubic-bezier(.2,.7,.2,1),filter .4s}.service-explore-card{transition:transform .35s ease,box-shadow .35s ease,border-color .35s ease}
+.product-card{transition:transform .35s ease,box-shadow .35s ease}.product-card .product-view img{transition:transform .6s cubic-bezier(.2,.7,.2,1),filter .35s}
+@media (hover: hover) and (pointer: fine){
+ .story-opening-photo:hover{transform:translateY(-5px);box-shadow:0 20px 38px #142d2020}.story-opening-photo:hover img{transform:scale(1.035);filter:saturate(1.05)}
+ .shop-stage-main:hover,.shop-stage-small:hover{transform:translateY(-7px);box-shadow:0 20px 35px #14352322}
+ .squad-opening-photo:hover img{transform:scale(1.035);filter:saturate(1.05)}
+ .home2-training-hero .home2-film-stage:hover{transform:translateY(-5px);box-shadow:0 24px 42px #0003}
+ .contact-opening-photo:hover,.services-mosaic figure:hover{transform:translateY(-5px);box-shadow:0 16px 30px #17382422}
+ .contact-opening-photo:hover img,.services-mosaic figure:hover img{transform:scale(1.03);filter:saturate(1.04)}
+ .service-detail-visual:hover img{transform:scale(1.035);filter:saturate(1.04)}
+ .service-explore-card:hover,.service-explore-card:focus-within{transform:translateY(-5px);box-shadow:0 17px 30px #16352413;border-color:var(--orange)}
+ .brand-directory-card:hover,.brand-directory-card:focus-within{transform:translateY(-5px);box-shadow:0 17px 30px #16352413;border-color:var(--orange)}
+ .brand-directory-card:hover .brand-equipment img{transform:translateY(-4px);filter:brightness(1.025)}
+ .product-card:hover{transform:translateY(-4px);box-shadow:0 17px 30px #16352415}
+ .product-card .product-view:hover img:not(.studio-photo){transform:scale(1.035);filter:saturate(1.04)}
+ .product-card .product-view:hover img.studio-photo{transform:translateY(-3px);filter:brightness(1.02)}
+}
+/**** On-load movement always leaves copy readable; scroll motion is opt-in and respects reduced motion. ****/
+@keyframes final-arrive{from{translate:0 18px}to{translate:0 0}}
+.shop-opening-grid>div:first-child,.story-opening-copy,.services-opening-copy,.contact-opening-grid>div:first-child,.squad-opening-copy,.brands-opening .container,.service-detail-copy{animation:final-arrive .75s cubic-bezier(.2,.7,.2,1) both}
+.shop-equipment-stage,.story-opening-photo,.services-mosaic,.contact-opening-photo,.service-detail-visual,.home2-film-stage{animation:final-arrive .95s .1s cubic-bezier(.2,.7,.2,1) both}
+html.final-motion .final-reveal{transition:opacity .65s ease,translate .65s cubic-bezier(.2,.7,.2,1);transition-delay:var(--motion-delay,0ms)}
+html.final-motion .final-reveal:not(.is-revealed){opacity:0;translate:0 16px}
+html.final-motion .final-reveal.is-revealed{opacity:1;translate:0 0}
+/* The narrow top reading-progress rule looked like a stray orange line on the hero. */
+.scroll-progress{display:none}
+@media(max-width:1050px){.shop-equipment-stage{min-height:400px;gap:18px}.shop-stage-main{width:min(100%,205px)}.shop-stage-note{font-size:25px}.story-opening-photo{height:395px}}
+@media(max-width:760px){.story-opening-photo{height:360px;max-width:600px;width:100%}.shop-equipment-stage{max-width:570px;min-height:400px;grid-template-columns:1fr 1.2fr;gap:22px}.shop-stage-main{width:min(100%,200px)}.shop-stage-small{margin-bottom:26px!important}.shop-stage-note{bottom:8px;font-size:27px}.home2-training-hero .home2-film-stage{width:100%}.home2-training-hero .home2-film-stage .hero-video{height:auto;aspect-ratio:16/9}.squad-opening-photo{height:340px}.squad-opening-photo figcaption{inset-inline:16px;bottom:16px;font-size:9px}}
+@media(max-width:480px){.story-opening-photo{height:320px;border-radius:18px}.story-opening-photo figcaption{bottom:12px;inset-inline:12px;padding:10px;font-size:8px}.shop-equipment-stage{min-height:330px;gap:14px;grid-template-columns:1fr 1fr}.shop-stage-main{width:100%}.shop-stage-small{margin-bottom:10px!important}.shop-equipment-stage figcaption{font-size:7px;letter-spacing:.03em;padding:10px}.shop-stage-note{font-size:22px;bottom:0}.squad-opening-photo{height:300px}}
+@media(prefers-reduced-motion:reduce){
+ .shop-opening-grid>div:first-child,.story-opening-copy,.services-opening-copy,.contact-opening-grid>div:first-child,.squad-opening-copy,.brands-opening .container,.service-detail-copy,.shop-equipment-stage,.story-opening-photo,.services-mosaic,.contact-opening-photo,.service-detail-visual,.home2-film-stage{animation:none!important}
+ html.final-motion .final-reveal{opacity:1!important;translate:none!important;transition:none!important}
+ .story-opening-photo,.story-opening-photo img,.shop-stage-main,.shop-stage-small,.squad-opening-photo img,.home2-film-stage,.contact-opening-photo,.contact-opening-photo img,.service-detail-visual img,.services-mosaic figure,.services-mosaic figure img,.brand-directory-card,.brand-equipment img,.service-explore-card,.product-card,.product-card .product-view img{transition:none!important;transform:none!important}
+}
+
+.home2-training-hero .hero-copy>*{opacity:1;animation:final-arrive .75s cubic-bezier(.2,.7,.2,1) both}@media(prefers-reduced-motion:reduce){.home2-training-hero .hero-copy>*{animation:none!important}}

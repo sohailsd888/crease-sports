@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Play Your Next Level | Crease Sports</title>
+    <meta name="description"
+        content="Explore Crease Sports: cricket, football, badminton and fitness gear, our story, brands and team orders.">
+    <meta name="theme-color" content="#ef4d26">
+    <link rel="icon" href="assets/favicon.svg?v=refined-equipment-20261021" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="v2-fonts.css">
+    <link rel="stylesheet" href="redesign.css">
+    <link rel="stylesheet" href="refinements.css">
+    <link rel="stylesheet" href="media-theme.css">
+    <link rel="stylesheet" href="premium.css">
+    <script>try { document.documentElement.dataset.theme = localStorage.getItem("crease-theme") || "light"; document.documentElement.dir = localStorage.getItem("crease-dir") || "ltr" } catch (e) { }</script>
+    <script src="products-data.js" defer></script>
+    <script src="app.js" defer></script>
+    <script src="experience.js" defer></script>
+    <script src="cinema.js" defer></script>
+<link rel="stylesheet" href="brand-directory.css"><link rel="stylesheet" href="refresh.css"><link rel="stylesheet" href="polish.css"><script src="polish.js" defer></script></head>
+
+<body><a class="skip" href="#main">Skip to content</a>
+    <header class="header">
+        <div class="container nav-wrap"><a class="logo brand-logo" href="index.html"
+                aria-label="Crease Sports home"><img class="brand-logo-light" src="assets/crease-logo-light.svg"
+                    alt="Crease Sports — Cricket &amp; Sports Store" width="440" height="112" decoding="async"><img
+                    class="brand-logo-dark" src="assets/crease-logo-dark.svg" alt="" aria-hidden="true" width="440"
+                    height="112" decoding="async"></a>
+            <nav id="navigation" aria-label="Main navigation">
+                <div class="home-dropdown"><button id="home-dropdown-toggle" class="home-dropdown-toggle"
+                        aria-expanded="false" aria-controls="home-dropdown-menu" aria-current="true">Home <svg
+                            class="home-chevron" viewBox="0 0 20 20" aria-hidden="true" focusable="false">
+                            <path d="m5 7.5 5 5 5-5" />
+                        </svg></button>
+                    <div class="home-dropdown-menu" id="home-dropdown-menu"><a href="index.html"
+                            aria-current="page">Home 1</a><a href="home2.html">Home 2</a></div>
+                </div><a href="products.html">Products</a><a href="about.html">About Us</a><a href="services.html">Services</a><a
+                    href="team-orders.html">Team Orders</a><a href="brands.html">Brands</a><a href="contact.html">Contact Us</a>
+            </nav>
+            <div class="nav-actions"><button class="icon-btn" id="theme-toggle" aria-label="Switch to dark theme"><svg
+                        viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="12" cy="12" r="4" />
+                        <path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l2 2m10 10 2 2M5 19l2-2M17 7l2-2" />
+                    </svg></button><button class="direction-btn" id="direction-toggle"
+                    aria-label="Switch reading direction">RTL</button><button class="bag-btn" id="bag-open"
+                    aria-label="Open shopping bag"><svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M5 7h14l1 14H4L5 7Z" />
+                        <path d="M9 8V6a3 3 0 0 1 6 0v2" />
+                    </svg><span id="bag-count">0</span></button><button class="icon-btn menu-btn" id="menu-toggle"
+                    aria-label="Open navigation" aria-expanded="false" aria-controls="navigation"><svg
+                        viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M3 6h18M3 12h18M3 18h18" />
+                    </svg></button></div>
+        </div>
+    </header>
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+    <main id="main">
+        <section class="cinema-hero" id="cinema-hero" data-scene="0" aria-label="Crease Sports seasonal edit">
+            <div class="cinema-scenes">
+                <div class="cinema-scene is-active" data-cinema-scene="0"><video id="cinema-video" muted loop
+                        playsinline preload="metadata" poster="assets/cricket-campaign-poster.jpg"
+                        aria-label="Cricket players practising on an outdoor field">
+                        <source src="assets/cricket-campaign.mp4" type="video/mp4">
+                    </video></div>
+                <div class="cinema-scene" data-cinema-scene="1" aria-hidden="true"><img class=""
+                        src="assets/football-6078302.jpg" alt="Football players practising together" loading="lazy">
+                </div>
+                <div class="cinema-scene" data-cinema-scene="2" aria-hidden="true"><img class=""
+                        src="assets/running.jpg" alt="Athletes running together at dawn" loading="lazy"></div>
+            </div>
+            <div class="cinema-shade"></div>
+            <div class="cinema-grid-lines" aria-hidden="true"></div>
+            <div class="container cinema-content">
+                <div class="cinema-copy"><span class="cinema-kicker"><i></i> THE GAME IS CALLING.</span>
+                    <h1><span>PLAY YOUR</span><span class="cinema-outline">NEXT</span><em>LEVEL.</em></h1>
+                    <p id="cinema-description">For the first net session. The clean strike.<br>The moments that make you
+                        come back.</p>
+                    <div class="cinema-actions"><a class="btn" id="cinema-shop" href="products.html?sport=cricket">Shop
+                            cricket gear <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M4 12h16M13 5l7 7-7 7" />
+                            </svg></a><a class="cinema-story-link" href="about.html"><span>↗</span> Get to know
+                            Crease</a></div>
+                    <div class="cinema-sport-tabs" role="group" aria-label="Choose the hero sport"><button
+                            data-cinema-select="0" aria-pressed="true"><small>01</small> Cricket
+                            <span></span></button><button data-cinema-select="1" aria-pressed="false"><small>02</small>
+                            Football <span></span></button><button data-cinema-select="2"
+                            aria-pressed="false"><small>03</small> Fitness <span></span></button></div>
+                </div>
+                <div class="cinema-side">
+                    <div class="cinema-orbit" aria-hidden="true"><span>ALL HEART. EVERY GAME.</span><b>↗</b></div>
+                    <div class="cinema-scene-card"><span id="cinema-scene-label">THE CRICKET EDIT</span>
+                        <h2 id="cinema-scene-title">Find your<br>sweet spot.</h2><span class="handwritten"
+                            id="cinema-script">Make the next one count.</span>
+                    </div>
+                </div>
+                <div class="cinema-footer"><span>CRICKET ROOTS. EVERY-SPORT ENERGY.</span>
+                    <div class="cinema-controls"><button id="cinema-prev"
+                            aria-label="Previous hero scene">←</button><span id="cinema-index" aria-live="off">01 /
+                            03</span><button id="cinema-next" aria-label="Next hero scene">→</button><button
+                            id="cinema-pause" aria-pressed="false" aria-label="Pause hero motion">Ⅱ Pause
+                            motion</button></div><a href="#sports">EXPLORE YOUR SPORT ↓</a>
+                </div>
+            </div>
+            <div class="cinema-announcement sr-only" id="cinema-announcement" role="status"></div>
+        </section>
+        <div class="marquee" aria-label="Cricket, football, badminton and fitness"><span>CRICKET <b>✦</b> FOOTBALL
+                <b>✦</b> BADMINTON <b>✦</b> FITNESS <b>✦</b> PLAY YOUR NEXT LEVEL <b>✦</b></span></div>
+        <section class="section container" id="sports">
+            <div class="section-heading">
+                <div><span class="eyebrow">FIND YOUR FIELD</span>
+                    <h2>ONE STORE. EVERY SPORT.</h2>
+                </div><a class="text-link" href="products.html">Shop all sports <svg viewBox="0 0 24 24"
+                        aria-hidden="true">
+                        <path d="M4 12h16M13 5l7 7-7 7" />
+                    </svg></a>
+            </div>
+            <div class="sport-grid"><a class="reveal sport-card sport-cricket" href="products.html?sport=cricket">
+                    <div class="sport-card-top"><span><svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M4 12h16M13 5l7 7-7 7" />
+                            </svg></span></div><img class="sport-photo fitted-photo landscape-photo fit-default"
+                        src="assets/cricket-field.jpg" alt="" loading="lazy" width="1200" height="800" decoding="async">
+                    <div class="sport-photo-shade"></div>
+                    <div class="sport-card-copy"><span class="eyebrow">CRICKET</span>
+                        <h3>Own the crease.</h3>
+                        <p>Bats, balls & match-day essentials</p>
+                    </div>
+                </a><a class="reveal sport-card sport-football" href="products.html?sport=football">
+                    <div class="sport-card-top"><span><svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M4 12h16M13 5l7 7-7 7" />
+                            </svg></span></div><img class="sport-photo fitted-photo landscape-photo fit-default"
+                        src="assets/football-duo.jpg" alt="" loading="lazy" width="1200" height="675" decoding="async">
+                    <div class="sport-photo-shade"></div>
+                    <div class="sport-card-copy"><span class="eyebrow">FOOTBALL</span>
+                        <h3>Chase the game.</h3>
+                        <p>From the first whistle to the last</p>
+                    </div>
+                </a><a class="reveal sport-card sport-badminton" href="products.html?sport=badminton">
+                    <div class="sport-card-top"><span><svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M4 12h16M13 5l7 7-7 7" />
+                            </svg></span></div><img class="sport-photo fitted-photo portrait-photo fit-default"
+                        src="assets/badminton-woman.jpg" alt="" loading="lazy" width="1200" height="1800"
+                        decoding="async">
+                    <div class="sport-photo-shade"></div>
+                    <div class="sport-card-copy"><span class="eyebrow">BADMINTON</span>
+                        <h3>Rule the rally.</h3>
+                        <p>Rackets, shuttles & court essentials</p>
+                    </div>
+                </a><a class="reveal sport-card sport-fitness" href="products.html?sport=fitness">
+                    <div class="sport-card-top"><span><svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M4 12h16M13 5l7 7-7 7" />
+                            </svg></span></div><img class="sport-photo fitted-photo landscape-photo fit-default"
+                        src="assets/fitness-movement.jpg" alt="" loading="lazy" width="1200" height="800"
+                        decoding="async">
+                    <div class="sport-photo-shade"></div>
+                    <div class="sport-card-copy"><span class="eyebrow">FITNESS</span>
+                        <h3>Put in the work.</h3>
+                        <p>Strength starts with your next rep</p>
+                    </div>
+                </a></div>
+        </section>
+        <section class="section featured">
+            <div class="container">
+                <div class="section-heading">
+                    <div><span class="eyebrow">THE STARTING LINEUP</span>
+                        <h2>GEAR WORTH SHOWING UP FOR.</h2>
+                    </div><a class="text-link" href="products.html">Explore all gear <svg viewBox="0 0 24 24"
+                            aria-hidden="true">
+                            <path d="M4 12h16M13 5l7 7-7 7" />
+                        </svg></a>
+                </div>
+                <div class="product-grid">
+                    <article class="reveal product-card">
+                        <div class="product-image cricket"><span class="product-tag">PLAYER’S PICK</span><button
+                                class="favorite icon-btn" data-favorite="1" aria-label="Save Player Edition Cricket Bat"
+                                aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="m12 21-8-8C-3 6 7-1 12 6c5-7 15 0 8 7l-8 8Z" />
+                                </svg></button><button class="product-view" data-view="1"
+                                aria-label="View Player Edition Cricket Bat"><img src="assets/cricket.webp"
+                                    alt="Photograph of Player Edition Cricket Bat" loading="lazy"></button><button
+                                class="quick-view" data-view="1">QUICK VIEW +</button></div>
+                        <div class="product-meta"><span>CRICKET / EQUIPMENT</span>
+                            <h3><button data-view="1">Player Edition Cricket Bat</button></h3>
+                            <div class="product-bottom"><span class="price">₹6,499</span><button class="add-btn"
+                                    data-add="1" aria-label="Add Player Edition Cricket Bat to bag">+</button></div>
+                        </div>
+                    </article>
+                    <article class="reveal product-card">
+                        <div class="product-image football"><span class="product-tag">MATCH READY</span><button
+                                class="favorite icon-btn" data-favorite="2" aria-label="Save Club Match Football"
+                                aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="m12 21-8-8C-3 6 7-1 12 6c5-7 15 0 8 7l-8 8Z" />
+                                </svg></button><button class="product-view" data-view="2"
+                                aria-label="View Club Match Football"><img src="assets/product-football.jpg"
+                                    alt="Photograph of Club Match Football" loading="lazy"></button><button
+                                class="quick-view" data-view="2">QUICK VIEW +</button></div>
+                        <div class="product-meta"><span>FOOTBALL / EQUIPMENT</span>
+                            <h3><button data-view="2">Club Match Football</button></h3>
+                            <div class="product-bottom"><span class="price">₹1,499</span><button class="add-btn"
+                                    data-add="2" aria-label="Add Club Match Football to bag">+</button></div>
+                        </div>
+                    </article>
+                    <article class="reveal product-card">
+                        <div class="product-image badminton"><span class="product-tag">LIGHT & FAST</span><button
+                                class="favorite icon-btn" data-favorite="3" aria-label="Save Aero Strike Racket"
+                                aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="m12 21-8-8C-3 6 7-1 12 6c5-7 15 0 8 7l-8 8Z" />
+                                </svg></button><button class="product-view" data-view="3"
+                                aria-label="View Aero Strike Racket"><img src="assets/product-racket.jpg"
+                                    alt="Photograph of Aero Strike Racket" loading="lazy"></button><button
+                                class="quick-view" data-view="3">QUICK VIEW +</button></div>
+                        <div class="product-meta"><span>BADMINTON / EQUIPMENT</span>
+                            <h3><button data-view="3">Aero Strike Racket</button></h3>
+                            <div class="product-bottom"><span class="price">₹2,499</span><button class="add-btn"
+                                    data-add="3" aria-label="Add Aero Strike Racket to bag">+</button></div>
+                        </div>
+                    </article>
+                    <article class="reveal product-card">
+                        <div class="product-image fitness"><span class="product-tag">TRAIN EVERY DAY</span><button
+                                class="favorite icon-btn" data-favorite="4" aria-label="Save Strength Training Dumbbell"
+                                aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="m12 21-8-8C-3 6 7-1 12 6c5-7 15 0 8 7l-8 8Z" />
+                                </svg></button><button class="product-view" data-view="4"
+                                aria-label="View Strength Training Dumbbell"><img src="assets/product-dumbbell.jpg"
+                                    alt="Photograph of Strength Training Dumbbell" loading="lazy"></button><button
+                                class="quick-view" data-view="4">QUICK VIEW +</button></div>
+                        <div class="product-meta"><span>FITNESS / EQUIPMENT</span>
+                            <h3><button data-view="4">Strength Training Dumbbell</button></h3>
+                            <div class="product-bottom"><span class="price">₹2,199</span><button class="add-btn"
+                                    data-add="4" aria-label="Add Strength Training Dumbbell to bag">+</button></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="container section">
+            <div class="reveal team-banner">
+                <div class="reveal team-banner-copy"><span class="eyebrow">ONE TEAM. ONE IDENTITY.</span>
+                    <h2>DIFFERENT PLAYERS.<br><em>SAME COLOURS.</em></h2>
+                    <p>Kit out your club, academy or weekend XI.<br>Custom jerseys. Match gear. A look that's all yours.
+                    </p><a class="btn dark-btn" href="team-orders.html">Explore team orders <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M13 5l7 7-7 7"/></svg></a>
+                </div>
+                <div class="jersey-scene"><span class="team-word">UNITED</span><img src="assets/jersey.svg"
+                        alt="Orange custom team jersey with number 07" loading="lazy"><span class="kit-label">YOUR NAME.
+                        YOUR NUMBER. YOUR TEAM.</span></div>
+            </div>
+        </section>
+        <section class="container section">
+            <div class="section-heading reveal">
+                <div><span class="eyebrow">THE PEOPLE BEHIND THE PLAY</span>
+                    <h2>SPORT IS OUR<br><em>COMMON GROUND.</em></h2>
+                </div><a class="text-link" href="about.html">Meet Crease Sports <svg viewBox="0 0 24 24"
+                        aria-hidden="true">
+                        <path d="M4 12h16M13 5l7 7-7 7" />
+                    </svg></a>
+            </div>
+            <div class="editorial-split">
+                <div class="editorial-image reveal"><img src="assets/shop-interior.jpg"
+                        alt="Sportswear and footwear displayed inside a retail store — inspiration image" loading="lazy"
+                        class="fitted-photo portrait-photo fit-editorial" width="1200" height="1623"
+                        decoding="async"><span class="image-sticker">MORE THAN<br>A GAME.</span></div>
+                <div class="editorial-copy reveal"><span class="eyebrow">FROM FIRST TRY TO GAME DAY</span>
+                    <h3>For the player<br>you’re becoming.</h3>
+                    <p>Some days it’s the thrill of a clean strike. Some days it’s simply showing up. We’re here for
+                        both, with gear inspiration for cricket, football, badminton and fitness.</p><a
+                        class="btn dark-btn" href="about.html">Our story <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M4 12h16M13 5l7 7-7 7" />
+                        </svg></a>
+                </div>
+            </div>
+        </section>
+        <section class="motion-section section">
+            <div class="container motion-grid">
+                <div class="motion-copy reveal"><span class="eyebrow">THE GAME, IN MOTION</span>
+                    <h2>BEHIND EVERY SHOT.<br><em>HOURS OF HEART.</em></h2>
+                    <p>The repetitions. The focus. The sound of the nets. A little inspiration for the next time you
+                        pick up your bat.</p><span class="handwritten">For the love of the game.</span>
+                    <p class="video-label">INSIDE THE NETS / CRICKET PRACTICE FILM</p>
+                </div>
+                <div class="video-frame reveal"><video controls playsinline preload="none"
+                        poster="assets/training-poster.jpg"
+                        aria-label="Cricket practice film showing players training in indoor nets">
+                        <source src="assets/cricket-training.mp4" type="video/mp4">Your browser cannot play this video.
+                        <a href="assets/cricket-training.mp4">Download the film</a>.
+                    </video>
+                    <div class="film-caption"><span>01 / PRACTICE MAKES THE PLAYER</span><a
+                            href="https://www.pexels.com/video/cricket-training-session-with-players-practicing-37115439/"
+                            target="_blank" rel="noopener">FILM: DHANUSH N / PEXELS ↗</a></div>
+                </div>
+            </div>
+        </section>
+        <section class="visit-section">
+            <div class="container visit-inner">
+                <div><span class="eyebrow">OFFLINE. ON YOUR SIDE.</span>
+                    <h2>GET A FEEL<br>FOR YOUR NEXT GAME.</h2>
+                </div>
+                <div>
+                    <p>Feel the pickup. Find the grip. Try your next favourite piece of kit in store.</p><a
+                        class="btn outline-btn" href="contact.html">Plan your visit <svg viewBox="0 0 24 24"
+                            aria-hidden="true">
+                            <path d="M4 12h16M13 5l7 7-7 7" />
+                        </svg></a>
+                </div>
+            </div>
+        </section>
+        <div class="container benefits">
+            <div><svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M2 5h12v12H2zM14 9h5l3 5v3h-8" />
+                    <circle cx="6" cy="18" r="2" />
+                    <circle cx="18" cy="18" r="2" />
+                </svg><span>GEAR FOR EVERY GAME<small>Four sports. One destination.</small></span></div>
+            <div><svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m12 2 9 4v6c0 6-9 10-9 10S3 18 3 12V6l9-4Z" />
+                    <path d="m8 11 3 3 5-5" />
+                </svg><span>CHOOSE WITH CONFIDENCE<small>Clear details for every product.</small></span></div>
+            <div><svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M3 7h17l-4-4M21 17H4l4 4" />
+                </svg><span>YOUR TEAM, YOUR WAY<small>Custom kit enquiries made easy.</small></span></div>
+        </div>
+        <section class="container section home-brand-preview"><div class="section-heading reveal"><div><span class="eyebrow">GEAR FROM NAMES YOU KNOW</span><h2>BIG NAMES.<br><em>BETTER GAME.</em></h2></div><a class="text-link" href="brands.html">Explore all brands <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M13 5l7 7-7 7"/></svg></a></div><div class="brand-directory-grid brand-preview-grid"><article class="brand-directory-card reveal" data-brand-name="YONEX" data-brand-sports="badminton"><a class="brand-equipment" href="products.html?brand=YONEX" aria-label="Explore YONEX products"><img src="assets/product-badminton-8293278712062.jpg" alt="Yonex Aerosensa 50 Shuttles" loading="lazy" width="600" height="450"><span>8 products</span></a><div class="brand-directory-copy"><p class="brand-sports">Badminton</p><h3>YONEX</h3><a class="text-link" href="products.html?brand=YONEX">Explore YONEX <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M13 5l7 7-7 7"/></svg></a></div></article><article class="brand-directory-card reveal" data-brand-name="ADIDAS" data-brand-sports="fitness football"><a class="brand-equipment" href="products.html?brand=ADIDAS" aria-label="Explore Adidas products"><img src="assets/product-football-9046717595902.jpg" alt="Adidas UCL Training Football" loading="lazy" width="600" height="450"><span>4 products</span></a><div class="brand-directory-copy"><p class="brand-sports">Fitness · Football</p><h3>Adidas</h3><a class="text-link" href="products.html?brand=ADIDAS">Explore Adidas <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M13 5l7 7-7 7"/></svg></a></div></article><article class="brand-directory-card reveal" data-brand-name="MOONWALKR" data-brand-sports="cricket"><a class="brand-equipment" href="products.html?brand=MOONWALKR" aria-label="Explore Moonwalkr products"><img src="assets/product-cricket-8497373806846.jpg" alt="Moonwalkr 2.0 Thigh Guard" loading="lazy" width="600" height="450"><span>4 products</span></a><div class="brand-directory-copy"><p class="brand-sports">Cricket</p><h3>Moonwalkr</h3><a class="text-link" href="products.html?brand=MOONWALKR">Explore Moonwalkr <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M13 5l7 7-7 7"/></svg></a></div></article></div></section>
+        <section class="container section sports-gallery-section">
+            <div class="section-heading reveal">
+                <div><span class="eyebrow">OUT THERE, IN YOUR ELEMENT</span>
+                    <h2>A WORLD OF SPORT.<br><em>A PLACE FOR YOUR GAME.</em></h2>
+                </div>
+            </div>
+            <div class="gallery-intro">
+                <p>From neighbourhood grounds to indoor courts, the best part is getting out there. Explore four
+                    different ways to make sport part of your day.</p>
+                <div class="gallery-controls"><button data-gallery-step="-1" aria-label="Previous gallery images"
+                        aria-controls="sport-gallery">←</button><button data-gallery-step="1"
+                        aria-label="Next gallery images" aria-controls="sport-gallery">→</button></div>
+            </div>
+            <div class="sport-gallery" id="sport-gallery" tabindex="0" aria-label="Explore sports inspiration"><a
+                    class="gallery-photo" href="products.html?sport=cricket"><img
+                        class="fitted-photo landscape-photo fit-default" src="assets/cricket-team.jpg"
+                        alt="Cricket match in progress" loading="lazy" width="1200" height="800" decoding="async">
+                    <div><span>CRICKET</span>
+                        <h3>The match-day feeling.</h3><span>Explore the gear ↗</span>
+                    </div>
+                </a><a class="gallery-photo" href="products.html?sport=football"><img
+                        class="fitted-photo landscape-photo fit-default" src="assets/football-squad.jpg"
+                        alt="Football squad practising together" loading="lazy" width="1200" height="800"
+                        decoding="async">
+                    <div><span>FOOTBALL</span>
+                        <h3>Better with your squad.</h3><span>Explore the gear ↗</span>
+                    </div>
+                </a><a class="gallery-photo" href="products.html?sport=badminton"><img
+                        class="fitted-photo portrait-photo fit-default" src="assets/badminton-victory.jpg"
+                        alt="Badminton player celebrating a point" loading="lazy" width="1200" height="1800"
+                        decoding="async">
+                    <div><span>BADMINTON</span>
+                        <h3>One more rally.</h3><span>Explore the gear ↗</span>
+                    </div>
+                </a><a class="gallery-photo" href="products.html?sport=fitness"><img
+                        class="fitted-photo landscape-photo fit-default" src="assets/strength-space.jpg"
+                        alt="Treadmills and training equipment in a gym" loading="lazy" width="1200" height="800"
+                        decoding="async">
+                    <div><span>FITNESS</span>
+                        <h3>Find your daily rhythm.</h3><span>Explore the gear ↗</span>
+                    </div>
+                </a></div>
+        </section>
+    <section class="service-home-teaser"><div class="container"><div><span class="eyebrow">SUPPORT FOR YOUR NEXT SESSION</span><h2>FIND YOUR FIT.<br><em>KEEP YOUR EDGE.</em></h2><p>Kit selection, teamwear, racket care and training setup.</p></div><a class="btn" href="services.html">Explore services <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M13 5l7 7-7 7"/></svg></a></div></section></main>
+    <section class="footer-invite">
+        <div class="container">
+            <div><span class="eyebrow">THERE’S ALWAYS ANOTHER GAME</span>
+                <h2>BIG DREAMS. BETTER GEAR.<br><em>LET’S PLAY.</em></h2>
+                <p>Find your next favourite kit, plan your team kit or come say hello.</p>
+            </div>
+            <div class="footer-invite-actions"><a class="btn " href="products.html">Explore the collection <svg
+                        viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4 12h16M13 5l7 7-7 7" />
+                    </svg></a><a class="btn soft-outline" href="contact.html">Contact the store <svg viewBox="0 0 24 24"
+                        aria-hidden="true">
+                        <path d="M4 12h16M13 5l7 7-7 7" />
+                    </svg></a></div>
+        </div>
+    </section>
+    <footer class="rich-footer">
+        <div class="container">
+            <div class="rich-footer-grid">
+                <div class="footer-about"><a class="logo brand-logo" href="index.html"
+                        aria-label="Crease Sports home"><img class="brand-logo-light" src="assets/crease-logo-light.svg"
+                            alt="Crease Sports — Cricket &amp; Sports Store" width="440" height="112"
+                            decoding="async"><img class="brand-logo-dark" src="assets/crease-logo-dark.svg" alt=""
+                            aria-hidden="true" width="440" height="112" decoding="async"></a>
+                    <p>Cricket roots. Every-sport energy. Gear inspiration, practical guides and a place for everyone
+                        who loves to play.</p>
+                    <div class="footer-socials" aria-label="Social media links"><a href="https://www.instagram.com/"
+                            target="_blank" rel="noopener noreferrer" aria-label="Instagram" title="Instagram"><svg
+                                viewBox="0 0 24 24" aria-hidden="true">
+                                <rect x="3" y="3" width="18" height="18" rx="5" />
+                                <circle cx="12" cy="12" r="4" />
+                                <circle cx="17.5" cy="6.5" r=".6" fill="currentColor" />
+                            </svg></a><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+                            aria-label="Facebook" title="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M14 22V13h3l1-4h-4V7c0-1 .5-2 2-2h2V1h-3c-4 0-6 2-6 6v2H6v4h3v9" />
+                            </svg></a><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"
+                            aria-label="YouTube" title="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true">
+                                <rect x="2" y="5" width="20" height="14" rx="4" />
+                                <path d="m10 9 6 3-6 3Z" />
+                            </svg></a><a href="https://x.com/" target="_blank" rel="noopener noreferrer" aria-label="X"
+                            title="X"><svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="m4 3 16 18h-4L1 3h4m15 0L4 21" />
+                            </svg></a></div>
+                </div>
+                <div>
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="index.html">Home 1 — Classic</a></li>
+                        <li><a href="home2.html">Home 2 — Modern</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li><li><a href="team-orders.html">Team Orders</a></li>
+                        <li><a href="brands.html">Our Brands</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Find Your Sport</h3>
+                    <ul>
+                        <li><a href="products.html?sport=cricket">Cricket Equipment</a></li>
+                        <li><a href="products.html?sport=football">Football Gear</a></li>
+                        <li><a href="products.html?sport=badminton">Badminton Essentials</a></li>
+                        <li><a href="products.html?sport=fitness">Fitness & Training</a></li>
+                        <li><a href="team-orders.html#team-order-enquiry">Team Kit Enquiries</a></li>
+                        <li><a href="brands.html">Shop by Brand</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Get In Touch</h3>
+                    <address>
+                        <div><svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M19 10c0 6-7 12-7 12S5 16 5 10a7 7 0 0 1 14 0Z" />
+                                <circle cx="12" cy="10" r="2" />
+                            </svg><span>Road No. 36, Jubilee Hills<br>Hyderabad, Telangana 500033<br></span></div><a
+                            href="mailto:hello@creasesports.example"><svg viewBox="0 0 24 24" aria-hidden="true">
+                                <rect x="3" y="5" width="18" height="14" rx="3" />
+                                <path d="m3 6 9 7 9-7" />
+                            </svg><span>hello@creasesports.example</span></a><a href="tel:+910000000000"><svg
+                                viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="m7 3 3 5-3 3c2 4 3 5 7 7l3-3 4 3c-1 7-8 5-14-1S0 4 7 3Z" />
+                            </svg><span>+91 00000 00000</span></a>
+                    </address><a class="footer-map-link"
+                        href="https://www.google.com/maps/search/?api=1&query=Jubilee+Hills+Hyderabad" target="_blank"
+                        rel="noopener">Explore the area ↗</a>
+                </div>
+            </div>
+            <div class="footer-hours-row">
+                <div><svg viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="12" cy="12" r="9" />
+                        <path d="M12 7v6l4 2" />
+                    </svg><span><strong>Opening hours</strong>Mon–Sat: 10 AM–8 PM · Sun: 11 AM–6 PM </span></div><a
+                    href="contact.html#visit-store">Plan a store visit <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4 12h16M13 5l7 7-7 7" />
+                    </svg></a><span class="footer-tagline handwritten">For the love of the game.</span>
+            </div>
+            <div class="rich-footer-bottom"><span>© <span id="year">2026</span> Crease Sports. All rights
+                    reserved.</span><a href="privacy-policy.html">Privacy Policy</a></div>
+        </div>
+    </footer><button id="floating-top" aria-label="Back to top">↑</button>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <dialog id="bag-dialog" class="bag-dialog">
+        <div class="dialog-head">
+            <h2>Your kit bag <span id="dialog-count"></span></h2><button class="icon-btn" data-close="bag-dialog"
+                aria-label="Close bag"><svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m5 5 14 14M5 19 19 5" />
+                </svg></button>
+        </div>
+        <div id="bag-items"></div>
+        <div id="bag-summary"></div>
+    </dialog>
+    <dialog id="product-dialog" class="product-dialog"><button class="icon-btn close-product"
+            data-close="product-dialog" aria-label="Close product details"><svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m5 5 14 14M5 19 19 5" />
+            </svg></button>
+        <div id="product-details"></div>
+    </dialog>
+</body>
+
+</html>
