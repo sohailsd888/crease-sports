@@ -1,0 +1,107 @@
+/* Brand system: orange + forest green; white, black and neutral greys only. */
+:root{--brand-orange:#ff4d23;--brand-green:#173d2b;--orange:var(--brand-orange);--forest:var(--brand-green);--paper:#ffffff;--surface:#ffffff;--ink:#161616;--muted:#666666;--card:#f5f5f5;--line:#dddddd;--soft:#f5f5f5;--soft-green:#f5f5f5;--finish-soft:#f5f5f5;--finish-panel:#ffffff;--finish-border:#dddddd;--finish-accent:var(--brand-orange);--finish-action:var(--brand-orange);--finish-action-ink:#000000;--finish-shadow:0 18px 45px #00000012}
+:root[data-theme=dark]{--orange:var(--brand-orange);--forest:var(--brand-green);--paper:#111111;--surface:#1c1c1c;--ink:#ffffff;--muted:#bdbdbd;--card:#222222;--line:#444444;--soft:#222222;--soft-green:#222222;--finish-soft:#222222;--finish-panel:#1c1c1c;--finish-border:#444444;--finish-accent:var(--brand-orange);--finish-action:var(--brand-orange);--finish-action-ink:#000000;--finish-shadow:0 18px 45px #00000033}
+html body{background:var(--paper);color:var(--ink)}
+html body .rich-footer{--footer-bg:var(--card);--footer-ink:var(--ink);--footer-muted:var(--muted);--footer-soft:var(--muted);--footer-rule:var(--line);--footer-accent:var(--brand-orange)}
+/* Bright orange stays consistent in every primary action, in either theme. */
+html body .btn:not(.dark-btn):not(.outline-btn):not(.soft-outline){background:var(--brand-orange)!important;border-color:var(--brand-orange)!important;color:#000000!important}
+html body .btn.dark-btn{background:var(--brand-green);color:#ffffff}
+html body .btn.outline-btn,html body .btn.soft-outline{background:transparent;color:inherit;border-color:currentColor}
+html body #bag-open,html[data-theme=dark] body #bag-open,html body #bag-open:hover,html[data-theme=dark] body #bag-open:hover{background:var(--brand-orange);border-color:var(--brand-orange);color:#000000;box-shadow:0 5px 18px #00000014}
+html body #bag-open span{background:#ffffff;color:#000000}
+html[data-theme=dark] body #bag-open span{background:#000000;color:#ffffff}
+html body main .eyebrow,html[data-theme=dark] body main .eyebrow{color:var(--brand-orange)}
+html body main .handwritten,html[data-theme=dark] body main .handwritten{color:var(--brand-orange)}
+html body main h1 em,html body main h2 em,html[data-theme=dark] body main h1 em,html[data-theme=dark] body main h2 em{color:var(--brand-orange)}
+html body main .starting-line-copy .eyebrow,html body main .journey-timeline .eyebrow{color:var(--brand-orange)}
+html body main .review-purpose .review-card{border-top-color:var(--brand-orange)}
+html body main .review-purpose .review-card:nth-child(2){border-top-color:var(--brand-green)}
+html body main .review-starting-line,html[data-theme=dark] body main .review-starting-line{background:var(--finish-soft);color:var(--ink)}
+html body main .review-purpose,html[data-theme=dark] body main .review-purpose{background:var(--card)}
+html body main .starting-line-notes span{background:var(--surface);color:var(--ink);border-color:var(--line)}
+html body main .starting-line-visual{background:var(--surface);border-color:var(--line)}
+html body main .starting-line-visual .handwritten,html[data-theme=dark] body main .starting-line-visual .handwritten{color:var(--brand-orange)}
+html body main .journey-marker{background:var(--brand-orange);box-shadow:0 0 0 1px var(--brand-orange)}
+html body main .journey-timeline:before{background:var(--line)}
+html body main .journey-timeline li{border-color:var(--line)}
+html body main .service-mosaic-note{background:var(--brand-orange);color:#000000}
+html body main .service-mosaic-note span,html body main .service-mosaic-note strong{color:#000000}
+html body main .home2-training-hero.home2-hero{background:var(--brand-green)}
+html[data-theme=dark] body main .home2-training-hero.home2-hero{background:#111111}
+html body main .home2-training-hero>.marquee,html[data-theme=dark] body main .home2-training-hero>.marquee{background:var(--brand-orange);color:#000000}
+html body main .squad-opening,html body main .squad-opening-copy{background:var(--brand-green);color:#ffffff}
+html[data-theme=dark] body main .squad-opening,html[data-theme=dark] body main .squad-opening-copy{background:#111111;color:#ffffff}
+html body main .squad-opening-copy p,html body main .squad-opening-copy .eyebrow{color:#ffffff}
+html body main .service-detail-2{background:var(--brand-green);color:#ffffff}
+html[data-theme=dark] body main .service-detail-2{background:#111111;color:#ffffff}
+html body main .service-detail-2 p{color:#dddddd}
+html body main .motion-section{background:var(--brand-green);color:#ffffff}
+html[data-theme=dark] body main .motion-section{background:#111111;color:#ffffff}
+html body main .motion-section .motion-copy p{color:#dddddd}
+html body main .review-store-section{background:var(--card);color:var(--ink)}
+html body main .review-store-grid figure>img{object-position:center}
+html body main .editorial-image img[src*="football-36213461"]{object-position:center!important}
+/* Common CTA tokens eliminate the former blue, gold, tan and peach variants. */
+html body main .finished-cta,html[data-theme=dark] body main .finished-cta{--cta-bg:var(--card);--cta-ink:var(--ink);--cta-muted:var(--muted);--cta-accent:var(--brand-orange);--cta-line:var(--line);background:var(--cta-bg);color:var(--cta-ink);border-color:var(--cta-line)}
+html body main .cta-products,html body main .cta-teamwear{--cta-bg:var(--brand-green);--cta-ink:#ffffff;--cta-muted:#dddddd;--cta-line:#ffffff44}
+html[data-theme=dark] body main .cta-products,html[data-theme=dark] body main .cta-teamwear{--cta-bg:#111111;--cta-ink:#ffffff;--cta-muted:#dddddd;--cta-line:#444444}
+html body main .finished-cta h2,html[data-theme=dark] body main .finished-cta h2{color:var(--cta-ink)}
+html body main .finished-cta h2 em,html body main .finished-cta .eyebrow,html[data-theme=dark] body main .finished-cta h2 em,html[data-theme=dark] body main .finished-cta .eyebrow{color:var(--brand-orange)}
+html body main .finished-cta p,html[data-theme=dark] body main .finished-cta p{color:var(--cta-muted)}
+html body main .finished-cta .cta-finish-photo,html[data-theme=dark] body main .finished-cta .cta-finish-photo{border-color:var(--cta-line)}
+html body main .cta-finish-photo figcaption{background:linear-gradient(transparent,#000000ee);color:#ffffff}
+html body main .cta-equipment-mark>span{background:transparent;border-color:var(--brand-orange)}
+html body main .home-team-cta.finished-cta,html[data-theme=dark] body main .home-team-cta.finished-cta{background:var(--paper)}
+html body main .home-team-cta .team-banner{background:var(--brand-orange);border-color:var(--brand-orange)}
+html body main .home-team-cta .team-banner h2{color:#000000}
+html body main .home-team-cta .team-banner h2 em{color:var(--brand-green)}
+html body main .home-team-cta .team-banner p,html body main .home-team-cta .team-banner .eyebrow{color:#000000}
+html[data-theme=dark] body main .home-team-cta .team-banner{background:var(--brand-green);border-color:var(--brand-orange)}
+html[data-theme=dark] body main .home-team-cta .team-banner h2{color:#ffffff}
+html[data-theme=dark] body main .home-team-cta .team-banner h2 em{color:var(--brand-orange)}
+html[data-theme=dark] body main .home-team-cta .team-banner p,html[data-theme=dark] body main .home-team-cta .team-banner .eyebrow{color:#ffffff}
+html body main .home-team-cta .team-banner .btn,html[data-theme=dark] body main .home-team-cta .team-banner .btn{background:#000000;color:#ffffff;border-color:#000000}
+html body main .home-story-cta.finished-cta,html[data-theme=dark] body main .home-story-cta.finished-cta{background:var(--paper)}
+html body main .home-story-cta .story-cta-finish{background:var(--card)}
+html body main .home-story-cta .story-cta-finish h2,html[data-theme=dark] body main .home-story-cta .story-cta-finish h2{color:var(--ink)}
+html body main .home-story-cta .story-cta-finish p,html[data-theme=dark] body main .home-story-cta .story-cta-finish p{color:var(--muted)}
+html body main .review-team-close .service-film-grid,html[data-theme=dark] body main .review-team-close .service-film-grid{border-color:var(--line)}
+html body main .review-team-close li,html[data-theme=dark] body main .review-team-close li{color:var(--muted)}
+/* Four distinct photo-first compositions retain the individual card shapes. */
+html body main .cta-photo-first.has-cta-photo .review-cta-inner{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);grid-template-areas:'visual copy';gap:54px;text-align:start}
+html body main .cta-photo-first .cta-finish-copy{grid-area:copy;max-width:650px;padding:0;border:0}
+html body main .cta-photo-first .cta-finish-photo{grid-area:visual;justify-self:start}
+html body main .cta-photo-first.cta-racket .cta-finish-photo{justify-self:center}
+html body main .cta-photo-first.cta-brands .review-cta-inner{gap:36px}
+/* Background-image CTAs: distinct imagery, generous readable overlay and a single action. */
+html body main .finished-cta.cta-background{--cta-bg:var(--brand-green);--cta-ink:#ffffff;--cta-muted:#dddddd;--cta-line:#ffffff44;position:relative;isolation:isolate;overflow:hidden;min-height:400px;display:grid;align-items:center;padding-block:64px;background:var(--brand-green);color:#ffffff}
+.cta-backdrop{position:absolute;inset:0;z-index:-2;margin:0;overflow:hidden;pointer-events:none}
+.cta-backdrop img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;transform:scale(1.01);transition:transform 1s ease;filter:saturate(.85)}
+html body main .finished-cta.cta-background:before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#173d2bee,#00000099);pointer-events:none}
+html[data-theme=dark] body main .finished-cta.cta-background:before{background:linear-gradient(90deg,#000000ee,#173d2bc9)}
+html body main .finished-cta.cta-background .review-cta-inner{position:relative;z-index:1;max-width:1340px;background:transparent;border:0}
+html body main .finished-cta.cta-background h2,html[data-theme=dark] body main .finished-cta.cta-background h2{color:#ffffff}
+html body main .finished-cta.cta-background p,html[data-theme=dark] body main .finished-cta.cta-background p{color:#ffffff;max-width:640px}
+html body main .finished-cta.cta-background h2 em,html body main .finished-cta.cta-background .eyebrow,html[data-theme=dark] body main .finished-cta.cta-background h2 em,html[data-theme=dark] body main .finished-cta.cta-background .eyebrow{color:var(--brand-orange)}
+html body main .cta-background-services .review-cta-inner{display:block;text-align:center;max-width:950px}
+html body main .cta-background-services .cta-finish-copy{max-width:none}
+html body main .cta-background-services h2,html body main .cta-background-services p{margin-inline:auto}
+html body main .cta-background-services .cta-finish-copy p{margin-bottom:26px}
+html body main .cta-background-services .cta-backdrop img{object-position:center 40%}
+html body main .cta-background-services:after{content:'';position:absolute;inset:22px;border:1px solid #ffffff44;border-radius:20px;pointer-events:none;width:auto;height:auto;transform:none;background:none}
+html body main .cta-background-contact .review-cta-inner{display:block}
+html body main .cta-background-contact .cta-finish-copy{max-width:720px;border-inline-start:3px solid var(--brand-orange);padding-inline-start:30px}
+html body main .cta-background-contact .cta-finish-copy p{margin-bottom:24px;max-width:600px}
+html body main .cta-background-contact .cta-backdrop img{object-position:center 62%}
+html body main .cta-background-contact:before{background:linear-gradient(90deg,#173d2bf5 0%,#173d2bd9 45%,#00000044)}
+html[data-theme=dark] body main .cta-background-contact:before{background:linear-gradient(90deg,#000000f5 0%,#000000d9 45%,#173d2b66)}
+html body main .cta-background-weekend-football .review-cta-inner{display:flex;flex-direction:column;align-items:flex-start;gap:26px;padding-inline-start:30px;border-inline-start:3px solid var(--brand-orange)}
+html body main .cta-background-weekend-football .cta-backdrop img{object-position:center 62%}
+html body main .cta-background-weekend-football{min-height:430px}
+html body main .cta-centered .review-cta-inner{flex-direction:column;text-align:center;gap:24px;max-width:900px}
+html body main .cta-centered .review-cta-inner p{margin-inline:auto}
+@media(hover:hover) and (pointer:fine){.cta-background:hover .cta-backdrop img,.cta-background:focus-within .cta-backdrop img{transform:scale(1.055)}.cta-background .btn:hover{box-shadow:0 12px 30px #00000033}}
+@media(max-width:900px){html body main .cta-photo-first.has-cta-photo .review-cta-inner{gap:30px}html body main .finished-cta.cta-background{min-height:360px;padding-block:50px}}
+@media(max-width:760px){html body main .cta-photo-first.has-cta-photo .review-cta-inner{grid-template-columns:1fr;grid-template-areas:'visual' 'copy';gap:27px}html body main .cta-photo-first .cta-finish-photo{justify-self:center;width:100%;max-width:520px}html body main .cta-background-contact .cta-finish-copy{padding-inline-start:23px}html body main .cta-background-services:after{inset:14px;border-radius:15px}html body main .finished-cta.cta-background{padding-block:48px;min-height:360px}html body main .cta-background-services .review-cta-inner{padding-inline:15px}html body main .cta-background-contact:before,html[data-theme=dark] body main .cta-background-contact:before{background:linear-gradient(90deg,#000000ee,#173d2bcc)}html body main .cta-background-weekend-football .review-cta-inner{padding-inline-start:22px}html body main .cta-background h2{font-size:38px}html body main .cta-photo-first.cta-brands .review-cta-inner{gap:26px}}
+@media(max-width:520px){html body main .cta-background h2{font-size:36px}html body main .cta-background p{font-size:14px}html body main .cta-background-contact .review-cta-inner{width:calc(100% - 32px)}html body main .cta-background-contact .cta-finish-copy{padding-inline-start:18px}html body main .cta-photo-first .cta-finish-photo>img{height:270px}}
+@media(prefers-reduced-motion:reduce){.cta-backdrop img{transition:none!important;transform:none!important}.cta-background:hover .cta-backdrop img{transform:none!important}}

@@ -1,0 +1,187 @@
+/* Final presentation: content stays in flow, photography stays visible in both themes. */
+:root{--finish-soft:#e7e7e7;--finish-panel:#fcfcfc;--finish-border:#d0d0d0;--finish-accent:#ff4d23;--finish-action:#ff4d23;--finish-action-ink:#ffffff;--finish-shadow:0 18px 45px #173d2b12}
+[data-theme=dark]{--finish-soft:#173d2b;--finish-panel:#173d2b;--finish-border:#595959;--finish-accent:#ff4d23;--finish-action:#ff4d23;--finish-action-ink:#173d2b;--finish-shadow:0 18px 45px #00000033}
+body main :where(.section-heading,.review-heading).is-centered-heading{display:block;text-align:center;max-width:850px;margin-inline:auto}
+body main .is-centered-heading>div{width:100%}
+body main .is-centered-heading h2,body main .is-centered-heading p{max-width:760px;margin-inline:auto}
+body main .is-centered-heading .eyebrow{display:block;margin-bottom:13px}
+body main .is-centered-heading h2{margin-bottom:18px}
+body main .service-related>h2,body main .service-related>.eyebrow{text-align:center;display:block}
+body main .review-purpose-heading .review-heading{margin-bottom:0}
+/* Each row is intrinsically sized. The ticker can never occupy the hero controls' row. */
+body main .home2-training-hero.home2-hero{display:flex;flex-direction:column;height:auto;min-height:0;padding:0;background:#173d2b;overflow:hidden}
+body main .home2-training-hero>.home2-training-grid{position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:60px;align-items:center;padding-block:58px 56px;flex:0 0 auto}
+body main .home2-training-hero .hero-inner{min-width:0;min-height:0;height:auto;padding:0;gap:24px;display:flex;flex-direction:column;align-items:stretch}
+body main .home2-training-hero .hero-copy{width:100%;min-width:0}
+body main .home2-training-hero .hero-bottom{position:static;inset:auto;width:100%;min-height:0;display:flex;align-items:center;flex-wrap:wrap;gap:14px;margin:0;padding-top:18px}
+body main .home2-training-hero .hero-bottom .video-toggle{margin:0;flex-shrink:0;min-height:40px}
+body main .home2-training-hero>.marquee{position:relative;inset:auto;transform:none;float:none;flex:0 0 auto;isolation:isolate;width:100%;height:62px;margin:0;padding:0;display:flex;align-items:center;border-block:1px solid #ffffff1c;z-index:0}
+body main .home2-training-hero>.marquee span{white-space:nowrap;line-height:1.1;font-size:30px}
+body main .home2-training-hero .home2-film-stage{align-self:center;margin:0;border-radius:20px;border:1px solid #ffffff24;box-shadow:0 18px 45px #00000022;min-width:0}
+[data-theme=dark] body main .home2-training-hero.home2-hero{background:#173d2b}
+[data-theme=dark] body main .home2-training-hero>.marquee{background:#ff4d23;color:#ffffff}
+/* A true image column avoids a blank right half, including in dark mode. */
+body main .manifesto-section.review-starting-line{background:var(--finish-soft);color:var(--ink);padding-block:64px;text-align:start;overflow:hidden}
+body main .review-starting-line .starting-line-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);align-items:center;gap:64px;max-width:1200px}
+body main .review-starting-line .starting-line-copy{min-width:0}
+body main .review-starting-line h2{font-size:clamp(36px,4.2vw,58px);max-width:none;line-height:1.04;margin:0 0 24px;text-wrap:balance}
+body main .review-starting-line .eyebrow{color:var(--finish-accent);margin-bottom:18px}
+body main .review-starting-line p{font-size:16px;line-height:1.9;color:var(--muted);max-width:620px;margin:0}
+.starting-line-notes{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}
+.starting-line-notes span{font-size:11px;line-height:1.4;padding:9px 12px;border:1px solid var(--finish-border);border-radius:30px;color:var(--ink);background:var(--finish-panel)}
+.starting-line-visual{position:relative;isolation:isolate;margin:0;padding:14px 14px 60px;border:1px solid var(--finish-border);border-radius:200px 200px 20px 20px;background:var(--finish-panel);max-width:460px;width:100%;justify-self:end;box-shadow:var(--finish-shadow)}
+.starting-line-visual>img{display:block;width:100%;height:430px;object-fit:cover;object-position:50% 45%;border-radius:190px 190px 10px 10px;filter:saturate(.9)}
+.starting-line-visual figcaption{position:absolute;bottom:22px;inset-inline:8px;text-align:center;line-height:1.3;animation:finish-float 6s ease-in-out infinite}
+body main .review-starting-line .starting-line-visual .handwritten{display:block;color:var(--finish-accent);font-size:30px;line-height:1.15;margin:0 0 10px;white-space:normal}
+.starting-line-visual figcaption small{display:block;color:var(--ink);font-size:8px;letter-spacing:.15em}
+.starting-line-dot{position:absolute;top:-19px;inset-inline-start:28px;width:13px;height:13px;background:var(--orange);border-radius:50%;box-shadow:0 0 0 6px var(--finish-panel)}
+.starting-line-orbit{position:absolute;inset:30px -20px 20px 30px;border:1px dashed var(--finish-accent);border-radius:45%;z-index:-1;transform:rotate(9deg);opacity:.4;pointer-events:none}
+@keyframes finish-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+/* Alternate the second About section while keeping a natural reading order on mobile. */
+body main .about-lead.about-lead-reversed{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.85fr);grid-template-areas:'copy photo';gap:64px;align-items:center}
+.about-lead-reversed .about-lead-copy{grid-area:copy;min-width:0}
+.about-lead-reversed .about-lead-photo{grid-area:photo;justify-self:end;max-width:450px;width:100%;aspect-ratio:4/5;max-height:540px}
+.about-lead-reversed .about-lead-copy>p{max-width:650px}
+body main .review-purpose>.container{grid-template-areas:'heading cards' 'values values'}
+.review-purpose-heading{grid-area:heading}.review-purpose-grid{grid-area:cards}
+.purpose-values-strip{grid-area:values;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px;padding-top:28px;border-top:1px solid var(--line)}
+.purpose-values-strip h3{font-size:27px;line-height:1.15;margin-bottom:14px}
+.purpose-values-strip p{font-size:14px;line-height:1.85;color:var(--muted)}
+/* A player journey rather than invented dates or company history. */
+.about-timeline{background:var(--paper);border-block:1px solid var(--line)}
+.journey-timeline{list-style:none;padding:25px 0 0;margin:38px 0 0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;position:relative}
+.journey-timeline:before{content:'';position:absolute;top:25px;inset-inline:20px;background:var(--finish-border);height:2px}
+.journey-timeline li{position:relative;padding:35px 25px 20px;min-width:0;border-inline-start:1px solid var(--line)}
+.journey-timeline li:first-child{border-inline-start:0}
+.journey-marker{position:absolute;top:-7px;inset-inline-start:25px;width:17px;height:17px;border-radius:50%;background:var(--finish-accent);border:4px solid var(--paper);box-shadow:0 0 0 1px var(--finish-accent)}
+.journey-timeline .eyebrow{font-size:9px;color:var(--finish-accent);letter-spacing:.13em;margin-bottom:16px}
+.journey-timeline h3{font-size:30px;line-height:1.12;margin-bottom:18px}
+.journey-timeline p{font-size:14px;line-height:1.85;color:var(--muted)}
+.journey-caption{display:flex;justify-content:space-between;align-items:center;gap:30px;border-top:1px solid var(--line);margin-top:25px;padding-top:25px}
+.journey-caption .handwritten{font-size:33px;color:var(--finish-accent)}
+.journey-caption p{font-size:13px;line-height:1.8;color:var(--muted);text-align:end}
+/* CTA surfaces use explicit theme pairs. Photo content has its own stable frame. */
+body main .finished-cta{--cta-bg:var(--finish-soft);--cta-ink:var(--ink);--cta-muted:var(--muted);--cta-accent:var(--finish-accent);--cta-line:var(--finish-border);background:var(--cta-bg);color:var(--cta-ink);border-color:var(--cta-line);transition:background-color .25s,color .25s,border-color .25s}
+body main .cta-about{--cta-bg:#e6e6e6;--cta-ink:#173d2b;--cta-muted:#5e5e5e;--cta-line:#cdcdcd}
+body main .cta-products{--cta-bg:#173d2b;--cta-ink:#ffffff;--cta-muted:#cacaca;--cta-accent:#ff4d23;--cta-line:#173d2b}
+body main .cta-brands{--cta-bg:#ffffff;--cta-ink:#2f2f2f;--cta-muted:#636363;--cta-line:#ff4d23}
+body main .cta-kit{--cta-bg:#f5f5f5;--cta-ink:#173d2b;--cta-muted:#616161}
+body main .cta-teamwear{--cta-bg:#173d2b;--cta-ink:#ffffff;--cta-muted:#f5f5f5;--cta-accent:#ff4d23;--cta-line:#173d2b}
+body main .cta-racket{--cta-bg:#f5f5f5;--cta-ink:#173d2b;--cta-muted:#606060}
+body main .cta-training{--cta-bg:#e2e2e2;--cta-ink:#2f2f2f;--cta-muted:#626262}
+body main .cta-guide-cricket{--cta-bg:#f5f5f5;--cta-ink:#173d2b;--cta-muted:#616161}
+body main .cta-guide-badminton{--cta-bg:#173d2b;--cta-ink:#f0f0f0;--cta-muted:#dcdcdc;--cta-accent:#cccccc;--cta-line:#848484}
+body main .cta-guide-fitness{--cta-bg:#f5f5f5;--cta-ink:#323232;--cta-muted:#ff4d23;--cta-line:#bcbcbc}
+body main .cta-guide-football{--cta-bg:#173d2b;--cta-ink:#ffffff;--cta-muted:#f5f5f5;--cta-accent:#d4d4d4;--cta-line:#173d2b}
+body main .cta-privacy{--cta-bg:var(--surface);--cta-ink:var(--ink);--cta-muted:var(--muted)}
+body main .service-next-band.finished-cta{--cta-bg:#f5f5f5;--cta-ink:#173d2b;--cta-muted:#616161}
+body main .finished-cta .review-cta-inner{position:relative;z-index:1;gap:40px;border-color:var(--cta-line);align-items:center}
+body main .finished-cta h2{color:var(--cta-ink);line-height:1.04}
+body main .finished-cta h2 em,body main .finished-cta .eyebrow{color:var(--cta-accent)}
+body main .finished-cta p{color:var(--cta-muted);opacity:1;font-size:15px;line-height:1.9}
+body main .finished-cta .review-cta-inner>.btn,body main .finished-cta .cta-finish-copy>.btn{background:var(--finish-action);color:var(--finish-action-ink);border:1px solid transparent;box-shadow:0 8px 24px #00000011;transition:background-color .25s,color .25s,transform .25s,box-shadow .25s}
+body main .finished-cta .btn:hover{transform:translateY(-3px);box-shadow:0 12px 25px #00000022}
+body main .has-cta-photo .review-cta-inner,body main .service-next-band.has-cta-photo>.container{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:50px;align-items:center;text-align:start;flex-direction:row}
+body main .has-cta-photo .cta-finish-copy{min-width:0;max-width:690px;border:0;padding:0}
+body main .has-cta-photo .cta-finish-copy p{margin:0 0 24px;max-width:600px}
+body main .cta-finish-photo{position:relative;isolation:isolate;max-width:480px;width:100%;min-width:0;justify-self:end;margin:0;border:1px solid var(--cta-line);border-radius:16px;overflow:hidden;box-shadow:var(--finish-shadow);background:var(--surface)}
+.cta-finish-photo>img{display:block;width:100%;height:290px;object-fit:cover;transition:transform .7s ease;filter:saturate(.9)}
+.cta-finish-photo figcaption{position:absolute;bottom:0;inset-inline:0;background:linear-gradient(transparent,#173d2bf2);color:#ffffff;padding:50px 18px 18px;font-size:9px;line-height:1.6;letter-spacing:.13em;font-weight:600}
+body main .cta-about .review-cta-inner{border-inline-start:0;padding-inline-start:0}
+body main .cta-about .cta-finish-copy{border-inline-start:3px solid var(--cta-accent);padding-inline-start:27px}
+body main .cta-products .cta-finish-photo{transform:rotate(2deg);border-radius:70px 16px 70px 16px;border-color:#ff4d2355}
+body main .cta-products .cta-finish-photo img{height:315px;object-position:center}
+body main .cta-brands .review-cta-inner{padding:32px;gap:36px;border-radius:22px}
+body main .cta-brands .cta-finish-photo{border-radius:140px 140px 14px 14px;max-width:400px}
+body main .cta-kit .review-cta-inner{align-items:center}
+body main .cta-teamwear .cta-finish-photo{border-radius:12px 60px 12px 12px}
+body main .cta-racket .cta-finish-photo{border-radius:160px 160px 16px 16px;max-width:330px;justify-self:center}
+body main .cta-racket .cta-finish-photo>img{height:330px}
+body main .cta-training .cta-finish-photo{border-radius:16px 16px 70px 16px}
+body main .service-next-band.finished-cta{padding-block:56px;position:relative;overflow:hidden}
+body main .service-next-band.finished-cta:after{content:'';position:absolute;width:280px;height:280px;border:1px solid var(--cta-line);border-radius:50%;inset-inline-start:-120px;bottom:-150px;pointer-events:none}
+body main .service-next-band .cta-finish-photo{max-width:360px;aspect-ratio:4/3}
+body main .service-next-band .cta-finish-photo>img{height:100%}
+.cta-equipment-mark{position:relative;isolation:isolate;flex:0 0 130px;width:130px;height:150px;display:grid;place-items:center;margin:0 auto}
+.cta-equipment-mark>span{position:absolute;inset:10px 0;border:1px solid var(--cta-line);border-radius:50%;transform:rotate(-15deg);z-index:-1;background:color-mix(in srgb,var(--cta-accent) 10%,transparent)}
+.cta-equipment-mark>img{width:100%;height:130px;object-fit:contain;filter:drop-shadow(0 8px 8px #00000022);transform:rotate(-12deg)}
+body main .has-cta-mark .review-cta-inner{display:grid;grid-template-columns:130px minmax(0,1fr) auto;gap:32px}
+body main .has-cta-mark .review-cta-inner>div:not(.cta-equipment-mark){max-width:640px}
+body main .has-cta-mark .review-cta-inner h2{font-size:clamp(34px,3.6vw,50px)}
+body main .home-team-cta.finished-cta{background:var(--paper);border:0;padding-block:12px 56px}
+body main .home-team-cta .team-banner{border:1px solid #ff4d23;background:linear-gradient(120deg,#ff4d23,#ff4d23);box-shadow:var(--finish-shadow)}
+body main .home-team-cta .team-banner h2{color:#ffffff}
+body main .home-team-cta .team-banner h2 em{color:#173d2b}
+body main .home-team-cta .team-banner p,body main .home-team-cta .team-banner .eyebrow{color:#173d2b}
+body main .home-team-cta .jersey-scene:before{content:'';position:absolute;inset:30px 10px;border:1px solid #ffffff4d;border-radius:50%;transform:rotate(-12deg);pointer-events:none}
+body main .home-team-cta .team-banner .btn{background:#173d2b;color:#ffffff}
+body main .home-story-cta.finished-cta{background:var(--paper);border:0}
+body main .home-story-cta .story-cta-finish{display:grid;grid-template-columns:1fr 1fr;min-height:380px;height:auto;background:var(--finish-soft);color:var(--ink);isolation:isolate;border:1px solid var(--line);box-shadow:var(--finish-shadow);overflow:hidden}
+body main .home-story-cta .story-cta-finish:before,body main .home-story-cta .story-cta-finish:after{display:none}
+body main .home-story-cta .story-cta-finish>img{position:relative;inset:auto;grid-column:1;grid-row:1;width:100%;height:100%;min-height:380px;max-height:480px;object-fit:cover;opacity:1}
+body main .home-story-cta .story-cta-finish>div{position:relative;inset:auto;grid-column:2;grid-row:1;align-self:center;padding:38px;min-width:0;background:transparent;width:auto;max-width:none}
+body main .home-story-cta .story-cta-finish h2{font-size:clamp(34px,3.6vw,50px);color:var(--ink);line-height:1.04}
+body main .home-story-cta .story-cta-finish p{color:var(--muted);font-size:15px;line-height:1.85;margin:0 0 24px}
+body main .home-story-cta .story-cta-finish .eyebrow{color:var(--finish-accent);font-size:10px;letter-spacing:.1em}
+body main .home-story-cta .story-cta-finish .btn{background:var(--finish-action);color:var(--finish-action-ink)}
+body main .review-team-close.finished-cta{--cta-bg:#e5e5e5;--cta-ink:#173d2b;--cta-muted:#5f5f5f;--cta-accent:#ff4d23;--cta-line:#c8c8c8;background:var(--cta-bg);color:var(--cta-ink)}
+body main .review-team-close .service-film-grid{align-items:center;border:1px solid var(--cta-line);border-radius:22px;padding:35px;gap:45px;box-shadow:var(--finish-shadow)}
+body main .review-team-close .service-film-player{overflow:hidden;border-radius:14px;border:1px solid var(--cta-line)}
+body main .review-team-close li{color:var(--cta-muted);font-size:14px;line-height:1.8}
+/* Theme pairs cover every CTA variant and the Kit bag button explicitly. */
+[data-theme=dark] body main .finished-cta{--cta-bg:#173d2b;--cta-ink:#ffffff;--cta-muted:#cecece;--cta-accent:#ff4d23;--cta-line:#565656}
+[data-theme=dark] body main .cta-about{--cta-bg:#173d2b;--cta-line:#616161}
+[data-theme=dark] body main .cta-products{--cta-bg:#173d2b;--cta-line:#173d2b}
+[data-theme=dark] body main .cta-brands{--cta-bg:#313131;--cta-muted:#f5f5f5;--cta-line:#ff4d23;--cta-accent:#ff4d23}
+[data-theme=dark] body main .cta-kit{--cta-bg:#2c2c2c;--cta-muted:#d3d3d3}
+[data-theme=dark] body main .cta-teamwear{--cta-bg:#173d2b;--cta-muted:#f5f5f5;--cta-line:#173d2b;--cta-accent:#ff4d23}
+[data-theme=dark] body main .cta-racket{--cta-bg:#173d2b;--cta-accent:#cccccc;--cta-line:#173d2b}
+[data-theme=dark] body main .cta-training{--cta-bg:#173d2b;--cta-line:#173d2b}
+[data-theme=dark] body main .cta-guide-cricket{--cta-bg:#2f2f2f;--cta-accent:#cccccc}
+[data-theme=dark] body main .cta-guide-badminton{--cta-bg:#173d2b;--cta-muted:#f5f5f5;--cta-accent:#cccccc;--cta-line:#173d2b}
+[data-theme=dark] body main .cta-guide-fitness{--cta-bg:#313131;--cta-muted:#f5f5f5;--cta-accent:#ff4d23;--cta-line:#ff4d23}
+[data-theme=dark] body main .cta-guide-football{--cta-bg:#173d2b;--cta-muted:#d1d1d1;--cta-accent:#d4d4d4}
+[data-theme=dark] body main .cta-privacy{--cta-bg:#232323}
+[data-theme=dark] body main .service-next-band.finished-cta{--cta-bg:#2d2d2d;--cta-muted:#f5f5f5;--cta-line:#5e5e5e}
+[data-theme=dark] body main .review-team-close.finished-cta{--cta-bg:#173d2b;--cta-muted:#cecece;--cta-accent:#ff4d23;--cta-line:#173d2b}
+[data-theme=dark] body main .home-team-cta .team-banner{background:linear-gradient(120deg,#ff4d23,#373737);border-color:#ff4d23}
+[data-theme=dark] body main .home-team-cta .team-banner h2{color:#ffffff}
+[data-theme=dark] body main .home-team-cta .team-banner h2 em{color:#ff4d23}
+[data-theme=dark] body main .home-team-cta .team-banner p,[data-theme=dark] body main .home-team-cta .team-banner .eyebrow{color:#f5f5f5}
+[data-theme=dark] body main .home-team-cta .team-banner .btn{background:#ff4d23;color:#173d2b}
+[data-theme=dark] body main .finished-cta .btn{background:var(--finish-action);color:var(--finish-action-ink);border-color:#ff4d2344}
+body #bag-open{background:#ff4d23;border-color:#ff4d23;color:#ffffff;box-shadow:0 5px 14px #ff4d2314;transition:background-color .25s,color .25s,border-color .25s,transform .25s}
+body #bag-open span{background:#ffffff25;color:#ffffff}
+[data-theme=dark] body #bag-open{background:#ffffff;color:#173d2b;border-color:#ffffff;box-shadow:0 4px 14px #00000022}
+[data-theme=dark] body #bag-open span{background:#173d2b;color:#ffffff}
+[data-theme=dark] body #bag-open:hover{background:#ff4d23;color:#173d2b;border-color:#ff4d23}
+[data-theme=dark] body main .btn{background:var(--finish-action);color:var(--finish-action-ink)}
+[data-theme=dark] body main .btn.outline-btn,[data-theme=dark] body main .btn.soft-outline{background:transparent;color:#ffffff;border-color:#8e8e8e}
+[data-theme=dark] body main :where(.section-heading,.review-heading,.editorial-copy,.about-lead-copy,.motion-copy,.store-card,.service-detail-copy,.form-intro) h2 em{color:#ff4d23}
+[data-theme=dark] body main .brands-opening{background-image:linear-gradient(90deg,#173d2bf5,#173d2bc7 50%,#173d2b88),url('assets/stadium.jpg')}
+[data-theme=dark] body main .squad-opening,[data-theme=dark] body main .squad-opening-copy{background:#173d2b}
+[data-theme=dark] body main .service-detail-2{background:#173d2b}
+[data-theme=dark] body main .service-detail-2 p{color:#d0d0d0}
+[data-theme=dark] body main .contact-opening,[data-theme=dark] body main .shop-opening,[data-theme=dark] body main .services-opening{background:var(--paper)}
+[data-theme=dark] body main .guide-opening{background:var(--surface)}
+[data-theme=dark] body main .guide-opening h1{color:var(--ink)}
+[data-theme=dark] body main .review-purpose{background:#2b2b2b}
+[data-theme=dark] body main .brand-directory-card,[data-theme=dark] body main .review-card,[data-theme=dark] body main .form-card,[data-theme=dark] body main .contact-option,[data-theme=dark] body main .service-explore-copy{background:var(--surface);color:var(--ink);border-color:var(--line)}
+@media (hover:hover) and (pointer:fine){.cta-finish-photo:hover>img{transform:scale(1.04)}.journey-timeline li:hover .journey-marker{box-shadow:0 0 0 1px var(--finish-accent),0 0 0 7px color-mix(in srgb,var(--finish-accent) 15%,transparent)}}
+@media(max-width:1100px){body main .home2-training-hero>.home2-training-grid{gap:36px}body main .review-starting-line .starting-line-grid{gap:40px}.starting-line-visual>img{height:380px}body main .has-cta-mark .review-cta-inner{grid-template-columns:95px minmax(0,1fr);gap:24px}body main .has-cta-mark .review-cta-inner>.btn{grid-column:2;justify-self:start}.cta-equipment-mark{width:95px;height:125px}.cta-equipment-mark>img{height:110px}body main .has-cta-photo .review-cta-inner,body main .service-next-band.has-cta-photo>.container{gap:30px}.cta-finish-photo>img{height:270px}}
+@media(max-width:900px){body main .about-lead.about-lead-reversed{gap:35px}body main .review-purpose>.container{grid-template-areas:'heading' 'cards' 'values'}.purpose-values-strip{gap:20px}.purpose-values-strip h3{font-size:25px}body main .review-starting-line h2{font-size:43px}.starting-line-visual>img{height:350px}body main .review-starting-line .starting-line-visual .handwritten{font-size:27px}.journey-timeline{grid-template-columns:1fr 1fr;gap:20px}.journey-timeline:before{display:none}.journey-timeline li{border-top:2px solid var(--finish-border);border-inline-start:0}.journey-marker{top:-9px}body main .review-team-close .service-film-grid{padding:27px;gap:30px}.review-cta-inner .cta-finish-copy{width:100%}}
+@media(max-width:760px){body main .home2-training-hero>.home2-training-grid{grid-template-columns:1fr;padding-block:38px 36px;gap:30px}body main .home2-training-hero .hero-inner{gap:20px}body main .home2-training-hero .hero-bottom{gap:16px}body main .home2-training-hero>.marquee{height:50px}body main .home2-training-hero>.marquee span{font-size:25px}body main .home2-training-hero .home2-film-stage{width:100%;max-width:600px;justify-self:center}body main .review-starting-line{padding-block:45px}body main .review-starting-line .starting-line-grid{grid-template-columns:1fr;gap:34px}body main .review-starting-line h2{font-size:42px;max-width:630px}.starting-line-visual{max-width:420px;justify-self:center}.starting-line-visual>img{height:390px}body main .about-lead.about-lead-reversed{grid-template-columns:1fr;grid-template-areas:'copy' 'photo';gap:30px}.about-lead-reversed .about-lead-photo{max-width:520px;justify-self:center;aspect-ratio:5/4}.purpose-values-strip{grid-template-columns:1fr;gap:25px}.purpose-values-strip h3{font-size:28px;margin-bottom:10px}.journey-caption{flex-direction:column;text-align:center;gap:12px}.journey-caption p{text-align:center}body main .has-cta-photo .review-cta-inner,body main .service-next-band.has-cta-photo>.container{grid-template-columns:1fr;gap:28px}body main .cta-finish-photo{max-width:100%;justify-self:center}body main .cta-finish-photo>img{height:290px}body main .cta-products .cta-finish-photo{transform:none}body main .cta-brands .review-cta-inner{padding:25px}body main .cta-racket .cta-finish-photo{max-width:330px}body main .service-next-band .cta-finish-photo{max-width:500px}body main .cta-about .cta-finish-copy{padding-inline-start:22px}body main .home-story-cta .story-cta-finish{grid-template-columns:1fr}body main .home-story-cta .story-cta-finish>img{grid-column:1;grid-row:1;min-height:260px;height:280px}body main .home-story-cta .story-cta-finish>div{grid-column:1;grid-row:2;padding:28px}body main .review-team-close .service-film-grid{padding:23px}body main .finished-cta h2{font-size:39px}body main .is-centered-heading h2{max-width:600px}body main .home-team-cta.finished-cta{padding-bottom:42px}}
+@media(max-width:520px){body main .review-starting-line h2{font-size:38px}.starting-line-visual{max-width:330px;padding:11px 11px 60px}.starting-line-visual>img{height:320px}.starting-line-orbit{inset-inline-end:-10px}.starting-line-notes{gap:6px}.starting-line-notes span{font-size:10px;padding:8px 10px}.journey-timeline{grid-template-columns:1fr;padding:0;margin-top:30px;gap:0}.journey-timeline:before{display:block;top:0;bottom:0;height:auto;width:2px;inset-inline-start:9px;inset-inline-end:auto}.journey-timeline li{padding:0 0 30px;padding-inline-start:40px;border:0}.journey-timeline li:last-child{padding-bottom:0}.journey-marker{top:0;inset-inline-start:1px}.journey-timeline h3{font-size:29px;margin-bottom:12px}.journey-timeline .eyebrow{margin-bottom:12px}.journey-caption .handwritten{font-size:29px}.cta-finish-photo>img{height:250px}body main .has-cta-mark .review-cta-inner{grid-template-columns:65px minmax(0,1fr);gap:18px}.cta-equipment-mark{width:65px;height:100px}.cta-equipment-mark>img{height:85px}body main .has-cta-mark .review-cta-inner h2{font-size:32px}body main .has-cta-mark .review-cta-inner>.btn{grid-column:1/-1;justify-self:start}body main .finished-cta h2{font-size:36px}body main .finished-cta .eyebrow{font-size:9px}body main .has-cta-photo .cta-finish-copy>.btn{font-size:12px;gap:17px;padding:14px 18px}body main .cta-brands .review-cta-inner{padding:22px}body main .review-team-close .service-film-grid{padding:20px}body main .home2-training-hero .hero-buttons{gap:18px}body main .home2-training-hero .hero-bottom{align-items:flex-start}body main .home2-training-hero .hero-bottom .video-toggle{font-size:9px;min-height:40px}body main .is-centered-heading h2{font-size:36px}}
+@media(prefers-reduced-motion:reduce){.starting-line-visual figcaption,.cta-finish-photo img,.journey-marker{animation:none!important;transition:none!important;transform:none!important}body main .finished-cta .btn,body #bag-open{transition:none!important}body main .finished-cta .btn:hover{transform:none!important}}
+/* Keep the starting-line caption in document flow rather than over the photograph. */
+.starting-line-visual{padding-bottom:0}
+.starting-line-visual figcaption{position:relative;inset:auto;padding:20px 4px 18px;min-height:77px}
+.starting-line-dot{top:-6px}
+@media(max-width:520px){.starting-line-visual{padding-bottom:0}}
+[data-theme=dark] body main .motion-section{background:#173d2b;color:#ffffff}
+[data-theme=dark] body main .motion-section .motion-copy p{color:#cdcdcd}
+:root:not([data-theme=dark]){--finish-action:#ff4d23}
+body #bag-open{background:#ff4d23;border-color:#ff4d23}
+body #bag-open:hover{background:#ff4d23;border-color:#ff4d23}
+[data-theme=dark] body #bag-open{background:#ffffff;border-color:#ffffff;color:#173d2b}
+[data-theme=dark] body #bag-open:hover{background:#ff4d23;border-color:#ff4d23;color:#173d2b}
