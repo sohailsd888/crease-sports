@@ -1,0 +1,66 @@
+/* Review refinements: deliberate section rhythm with compact, unboxed CTAs. */
+html body main{--section-space:80px;--section-space-small:64px}
+html body main>section.section:not([data-page-cta]){padding-block:var(--section-space)}
+html body main>section.review-checklist-strip:not([data-page-cta]){padding-block:var(--section-space-small)}
+html body main>.review-starting-line{padding-block:var(--section-space)}
+html body main>.review-store-section{padding-block:var(--section-space) 0}
+html body main>.review-store-section .benefits{margin-top:40px;padding-block:32px}
+html body main>.section:not([data-page-cta]) .section-heading{margin-bottom:34px}
+html body main>section[data-page-cta]{margin-top:0}
+html body main>.home-team-cta[data-page-cta]{padding-block:24px 72px}
+html body main>.home-story-cta[data-page-cta]{padding-block:24px 72px}
+html body main h1,html body main h2,html body main [id]{scroll-margin-top:122px}
+/* The portrait film has one bounded frame; the layout wrapper has no card decoration. */
+html body main .team-cta-compact.finished-cta{--cta-bg:var(--brand-green);--cta-ink:#ffffff;--cta-muted:#dddddd;--cta-line:#ffffff33;background:var(--brand-green);color:#ffffff;min-height:0;padding-block:56px;border:0}
+html[data-theme=dark] body main .team-cta-compact.finished-cta{--cta-bg:#111111;--cta-ink:#ffffff;--cta-muted:#dddddd;--cta-line:#444444;background:#111111;color:#ffffff;border-top:1px solid var(--line)}
+html body main .team-cta-compact .service-film-grid{display:grid;grid-template-columns:200px minmax(0,1fr);align-items:center;gap:56px;width:min(1080px,calc(100% - 96px));margin-inline:auto;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none}
+html body main .team-cta-compact .service-film-player{position:relative;width:169px;max-width:169px;justify-self:center;order:0;margin:0;padding:0;border:0;border-radius:0;overflow:visible;background:transparent;box-shadow:none}
+html body main .team-cta-compact .service-film-player video{display:block;width:169px;height:300px;min-height:0;max-height:300px;aspect-ratio:9/16;object-fit:contain;background:#000000;border-radius:12px;box-shadow:none}
+html body main .team-cta-compact .service-film-player>span{display:block;color:#dddddd;line-height:1.5;font-size:7px;letter-spacing:.06em;margin-top:10px;white-space:normal}
+html body main .team-cta-compact .team-close-copy{min-width:0;max-width:720px;margin:0;padding:0}
+html body main .team-cta-compact .team-close-copy .eyebrow{display:block;margin-bottom:12px;font-size:10px;line-height:1.5;color:var(--brand-orange)}
+html body main .team-cta-compact .team-close-copy h2{font-size:clamp(36px,3.7vw,48px);line-height:1.04;margin:0 0 18px;color:#ffffff}
+html body main .team-cta-compact .team-close-copy h2 em{color:var(--brand-orange)}
+html body main .team-cta-compact .team-close-copy p{font-size:15px;line-height:1.8;margin:0 0 24px;color:#dddddd;max-width:630px}
+html body main .team-cta-compact .team-close-copy .btn{font-size:13px;padding:14px 20px;min-height:50px;line-height:1.4}
+/* Service recommendations are a complete editorial block, not a row of bare links. */
+html body main>.service-related-expanded{border-top:0}
+html body main .service-related-expanded>.related-services-layout{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);grid-template-areas:'copy photo';align-items:center;gap:64px;margin:0;padding:0;border:0;background:transparent;box-shadow:none}
+html body main .service-related-expanded .related-services-copy{grid-area:copy;min-width:0}
+html body main .service-related-expanded .related-services-copy>.eyebrow{display:block;text-align:start;font-size:10px;line-height:1.6;margin-bottom:14px;color:var(--brand-orange)}
+html body main .service-related-expanded .related-services-copy h2{font-size:clamp(36px,3.6vw,48px);line-height:1.04;text-align:start;margin:0 0 20px;max-width:650px}
+html body main .service-related-expanded .related-services-copy>p{color:var(--muted);font-size:16px;line-height:1.85;margin:0 0 18px;max-width:610px}
+html body main .service-related-expanded .related-service-links{display:grid;grid-template-columns:1fr;gap:0;margin:0;padding:0;border:0}
+html body main .service-related-expanded .related-service-link{display:grid;grid-template-columns:minmax(0,1fr) 25px;gap:22px;align-items:center;padding:17px 0;border:0;border-bottom:1px solid var(--line);border-radius:0;background:transparent;box-shadow:none;color:var(--ink);transition:transform .25s,color .25s}
+html body main .service-related-expanded .related-service-link strong{display:block;font-family:var(--body);font-size:15px;font-weight:600;line-height:1.5;margin-bottom:5px;color:var(--ink)}
+html body main .service-related-expanded .related-service-link span{display:block;font-size:13px;line-height:1.75;font-weight:400;color:var(--muted)}
+html body main .service-related-expanded .related-service-link svg{width:24px;height:24px;color:var(--brand-orange)}
+html body main .service-related-expanded .related-services-photo{grid-area:photo;position:relative;margin:0;min-width:0;width:100%;height:440px;overflow:hidden;border:1px solid var(--line);border-radius:16px;background:var(--card)}
+html body main .service-related-expanded .related-services-photo>img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 35%}
+html body main .service-related-expanded .related-services-photo figcaption{position:absolute;bottom:0;inset-inline:0;padding:45px 20px 20px;background:linear-gradient(transparent,#000000dd);color:#ffffff;font-size:9px;line-height:1.6;font-weight:600;letter-spacing:.1em}
+html body main .service-related-expanded.related-photo-first>.related-services-layout{grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr);grid-template-areas:'photo copy'}
+html body main .service-related-expanded img[src*="badminton-8007408"]{object-position:50% 55%}
+html body main .service-related-expanded img[src*="badminton-8713604"]{object-position:50% 25%}
+/* All three kit cards share the same photo stage and a stable copy/footer layout. */
+html body main .kit-ideas{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;align-items:stretch}
+html body main .kit-idea.kit-idea-balanced{display:flex;flex-direction:column;min-width:0;height:100%;overflow:hidden;border:1px solid var(--line);border-radius:16px;background:var(--surface)}
+html body main .kit-idea.kit-idea-balanced>img,html body main .kit-idea.kit-idea-balanced:has(>.portrait-photo)>img{position:static;display:block;width:100%;height:290px;min-height:0;max-height:none;aspect-ratio:auto;object-fit:cover!important;object-position:50% 30%!important;flex:0 0 290px;border:0;border-radius:0}
+html body main .kit-idea.kit-idea-balanced>img.kit-image-badminton{object-position:50% 32%!important}
+html body main .kit-idea.kit-idea-balanced>div{display:flex;flex-direction:column;flex:1;min-width:0;padding:26px}
+html body main .kit-idea.kit-idea-balanced>div>.eyebrow{margin-bottom:14px}
+html body main .kit-idea.kit-idea-balanced h3{font-size:30px;line-height:1.13;margin:0 0 18px;min-height:0}
+html body main .kit-idea.kit-idea-balanced p{font-size:15px;line-height:1.85;margin:0 0 25px;color:var(--muted)}
+html body main .kit-idea.kit-idea-balanced .text-link{align-self:flex-start;margin-top:auto;font-size:13px}
+@media(hover:hover) and (pointer:fine){html body main .service-related-expanded .related-service-link:hover{transform:translateX(5px);color:var(--brand-orange);box-shadow:none}html[dir=rtl] body main .service-related-expanded .related-service-link:hover{transform:translateX(-5px)}html body main .service-related-expanded .related-service-link:hover strong{color:var(--brand-orange)}}
+@media(max-width:1100px){html body main .service-related-expanded>.related-services-layout{gap:38px}html body main .service-related-expanded .related-services-photo{height:430px}html body main .team-cta-compact .service-film-grid{gap:38px;grid-template-columns:180px minmax(0,1fr)}html body main .kit-idea.kit-idea-balanced>div{padding:23px}}
+@media(max-width:960px){html body main{--section-space:68px;--section-space-small:54px}html body main .kit-ideas{grid-template-columns:repeat(2,minmax(0,1fr))}html body main .kit-idea.kit-idea-balanced>img,html body main .kit-idea.kit-idea-balanced:has(>.portrait-photo)>img{height:270px;flex-basis:270px}html body main .service-related-expanded .related-services-photo{height:460px}html body main .team-cta-compact .service-film-grid{width:calc(100% - 64px)}}
+@media(max-width:760px){html body main{--section-space:56px;--section-space-small:46px}html body main>.section:not([data-page-cta]) .section-heading{margin-bottom:28px}html body main>section[data-page-cta]{margin-top:0}html body main>.home-team-cta[data-page-cta],html body main>.home-story-cta[data-page-cta]{padding-block:20px 54px}html body main .service-related-expanded>.related-services-layout,html body main .service-related-expanded.related-photo-first>.related-services-layout{grid-template-columns:1fr;grid-template-areas:'copy' 'photo';gap:30px}html body main .service-related-expanded .related-services-photo{height:360px;max-width:580px;justify-self:center}html body main .service-related-expanded .related-services-copy>p{max-width:none}html body main .service-related-expanded .related-services-copy h2{font-size:40px}html body main .team-cta-compact.finished-cta{padding-block:44px}html body main .team-cta-compact .service-film-grid{grid-template-columns:155px minmax(0,1fr);width:calc(100% - 48px);gap:28px}html body main .team-cta-compact .service-film-player{width:144px;max-width:144px}html body main .team-cta-compact .service-film-player video{width:144px;height:256px;max-height:256px}html body main .team-cta-compact .team-close-copy h2{font-size:36px}html body main .team-cta-compact .team-close-copy p{font-size:14px;line-height:1.8}html body main h1,html body main h2,html body main [id]{scroll-margin-top:100px}}
+@media(max-width:640px){html body main .kit-ideas{grid-template-columns:1fr}html body main .kit-idea.kit-idea-balanced>img,html body main .kit-idea.kit-idea-balanced:has(>.portrait-photo)>img{height:280px;flex-basis:280px}html body main .kit-idea.kit-idea-balanced>div{padding:25px}html body main .kit-idea.kit-idea-balanced h3{font-size:30px}html body main .team-cta-compact .service-film-grid{grid-template-columns:1fr;gap:30px;width:calc(100% - 40px)}html body main .team-cta-compact .team-close-copy{grid-row:1}html body main .team-cta-compact .service-film-player{grid-row:2;justify-self:start;width:144px;max-width:144px;order:0}html body main .team-cta-compact .service-film-player video{height:256px}html body main .service-related-expanded .related-services-copy h2{font-size:38px}html body main .service-related-expanded .related-services-photo{height:340px}html body main .service-related-expanded .related-service-link{padding-block:18px}html body main .service-related-expanded .related-service-link strong{font-size:15px}html body main .service-related-expanded .related-service-link span{font-size:13px}}
+@media(prefers-reduced-motion:reduce){html body main .service-related-expanded .related-service-link{transition:none!important}html body main .service-related-expanded .related-service-link:hover{transform:none!important}}
+
+/* Keep neighbouring background bands joined, with spacing inside the sections. */
+html body main>.review-faq:has(+section[data-page-cta]){border-bottom:0}
+html body main>.review-faq+section[data-page-cta]{border-top:0}
+/* Match the original orange card interaction after the equal-height card rules. */
+html body main .review-hover:focus-within{border-color:var(--brand-orange)}
+@media(hover:hover) and (pointer:fine){html body main .review-hover:hover{border-color:var(--brand-orange)}}
