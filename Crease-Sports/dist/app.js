@@ -31,5 +31,19 @@
  if(grid){$('#product-search').addEventListener('input',()=>{const u=new URL(location.href);u.searchParams.delete('brand');history.replaceState(null,'',u);filterProducts()});$('#product-sort').addEventListener('change',filterProducts);$('#saved-filter').addEventListener('click',()=>{onlySaved=!onlySaved;filterProducts()});$('#reset-filters').addEventListener('click',()=>{activeSport='all';onlySaved=false;$('#product-search').value='';$('#product-sort').value='featured';const u=new URL(location.href);u.searchParams.delete('sport');u.searchParams.delete('brand');history.replaceState(null,'',u);filterProducts()});filterProducts()}
  const formUrls=new Map();
  ['team-enquiry','contact-enquiry'].forEach(id=>{const form=$('#'+id);if(!form)return;const date=$('input[type=date]',form);if(date){const now=new Date();date.min=`${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`}form.addEventListener('submit',e=>{e.preventDefault();if(!form.reportValidity())return;const data=Object.fromEntries(new FormData(form));const team=id==='team-enquiry';const title=team?'TEAM KIT BRIEF':'CONTACT MESSAGE DRAFT';const text=`CREASE SPORTS — ${title}\nCreated: ${new Date().toLocaleDateString()}\n\n${Object.entries(data).map(([k,v])=>`${k.charAt(0).toUpperCase()+k.slice(1)}: ${String(v).trim()}`).join('\n\n')}\n\nFrontend demo only. Nothing has been sent and no order has been placed.`;if(formUrls.has(id))URL.revokeObjectURL(formUrls.get(id));const url=URL.createObjectURL(new Blob([text],{type:'text/plain;charset=utf-8'}));formUrls.set(id,url);const status=$('.form-status',form);status.replaceChildren();const p=document.createElement('p');p.textContent=team?'Your team brief is ready. Download it below to keep a copy.':'Your message draft is ready. Download it below to keep a copy.';const a=document.createElement('a');a.href=url;a.download=team?'crease-team-brief.txt':'crease-contact-draft.txt';a.textContent=team?'Download team brief ↓':'Download message draft ↓';status.append(p,a);notify(team?'Team brief created. Nothing has been sent.':'Message draft created. Nothing has been sent.')})});
+  document.querySelectorAll('.faq-grid details, .review-faq-grid details').forEach(detail => {
+    detail.addEventListener('toggle', () => {
+      if (detail.open) {
+        const container = detail.closest('.faq-grid, .review-faq-grid');
+        if (container) {
+          container.querySelectorAll('details').forEach(other => {
+            if (other !== detail && other.open) {
+              other.open = false;
+            }
+          });
+        }
+      }
+    });
+  });
  $('#back-top')?.addEventListener('click',()=>window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'}));$('#year').textContent='2026';bagCount();favoriteStates();
 })();

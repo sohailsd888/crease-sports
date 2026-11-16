@@ -64,3 +64,371 @@ html body main>.review-faq+section[data-page-cta]{border-top:0}
 /* Match the original orange card interaction after the equal-height card rules. */
 html body main .review-hover:focus-within{border-color:var(--brand-orange)}
 @media(hover:hover) and (pointer:fine){html body main .review-hover:hover{border-color:var(--brand-orange)}}
+
+
+/* ============================================================
+   1. CONSISTENT BUTTON STYLING ACROSS ALL PAGES
+   ============================================================ */
+:root {
+  --btn-radius: 8px;
+  --btn-height: 52px;
+  --btn-padding: 14px 28px;
+  --btn-font-size: 14px;
+}
+
+/* Primary Button Styling */
+html body .btn,
+html body a.btn,
+html body button.btn,
+html body input[type="submit"].btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 12px !important;
+  min-height: var(--btn-height) !important;
+  padding: var(--btn-padding) !important;
+  font-family: var(--body, 'Space Grotesk', 'DM Sans', sans-serif) !important;
+  font-size: var(--btn-font-size) !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  text-decoration: none !important;
+  border-radius: var(--btn-radius) !important;
+  background: var(--brand-orange, #ff4d23) !important;
+  color: #ffffff !important;
+  border: 1px solid var(--brand-orange, #ff4d23) !important;
+  box-shadow: 0 4px 14px rgba(255, 77, 35, 0.28) !important;
+  cursor: pointer !important;
+  white-space: nowrap !important;
+  transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1),
+              box-shadow 0.25s cubic-bezier(0.2, 0.8, 0.2, 1),
+              background-color 0.25s ease,
+              border-color 0.25s ease,
+              color 0.25s ease !important;
+}
+
+/* Primary Button Hover & Focus & Active */
+html body .btn:hover,
+html body a.btn:hover,
+html body button.btn:hover {
+  background: #e63e15 !important;
+  border-color: #e63e15 !important;
+  color: #ffffff !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 24px rgba(255, 77, 35, 0.42) !important;
+}
+
+html body .btn:active,
+html body a.btn:active,
+html body button.btn:active {
+  transform: translateY(0) !important;
+  box-shadow: 0 2px 8px rgba(255, 77, 35, 0.3) !important;
+}
+
+/* Secondary / Outline Button Variant */
+html body .btn.outline-btn,
+html body .btn.soft-outline,
+html body a.btn.outline-btn,
+html body a.btn.soft-outline {
+  background: transparent !important;
+  color: inherit !important;
+  border: 2px solid currentColor !important;
+  box-shadow: none !important;
+}
+
+html body .btn.outline-btn:hover,
+html body .btn.soft-outline:hover,
+html body a.btn.outline-btn:hover,
+html body a.btn.soft-outline:hover {
+  background: rgba(255, 77, 35, 0.1) !important;
+  border-color: var(--brand-orange, #ff4d23) !important;
+  color: var(--brand-orange, #ff4d23) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Dark Button Variant */
+html body .btn.dark-btn,
+html body a.btn.dark-btn,
+html body button.btn.dark-btn {
+  background: var(--brand-green, #173d2b) !important;
+  color: #ffffff !important;
+  border: 1px solid var(--brand-green, #173d2b) !important;
+  box-shadow: 0 4px 14px rgba(23, 61, 43, 0.25) !important;
+}
+
+html body .btn.dark-btn:hover,
+html body a.btn.dark-btn:hover,
+html body button.btn.dark-btn:hover {
+  background: #102b1e !important;
+  border-color: #102b1e !important;
+  color: #ffffff !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 22px rgba(23, 61, 43, 0.38) !important;
+}
+
+/* Specific Page Overrides to Ensure Strict Button Uniformity */
+html body main .home-team-cta .team-banner .btn,
+html[data-theme="dark"] body main .home-team-cta .team-banner .btn,
+html body main .home-story-cta .story-cta-finish .btn,
+html body main .finished-cta .review-cta-inner > .btn,
+html body main .finished-cta .cta-finish-copy > .btn,
+html body main .squad-opening-copy .btn,
+html body main .team-cta-compact .team-close-copy .btn {
+  border-radius: var(--btn-radius) !important;
+  min-height: var(--btn-height) !important;
+  padding: var(--btn-padding) !important;
+  font-size: var(--btn-font-size) !important;
+  gap: 12px !important;
+}
+
+/* Button SVG icons */
+html body .btn svg {
+  width: 18px !important;
+  height: 18px !important;
+  stroke: currentColor !important;
+  stroke-width: 2 !important;
+  flex-shrink: 0 !important;
+  transition: transform 0.25s ease !important;
+}
+
+html body .btn:hover svg {
+  transform: translateX(3px) !important;
+}
+
+html[dir="rtl"] body .btn:hover svg {
+  transform: translateX(-3px) !important;
+}
+
+/* Dark Theme Button Overrides */
+html[data-theme="dark"] body .btn.outline-btn,
+html[data-theme="dark"] body .btn.soft-outline {
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, 0.45) !important;
+}
+
+html[data-theme="dark"] body .btn.outline-btn:hover,
+html[data-theme="dark"] body .btn.soft-outline:hover {
+  background: rgba(255, 77, 35, 0.15) !important;
+  border-color: var(--brand-orange, #ff4d23) !important;
+  color: var(--brand-orange, #ff4d23) !important;
+}
+
+/* ============================================================
+   2. UNIFORM HERO SECTION HEIGHT ACROSS ALL PAGES
+   ============================================================ */
+:root {
+  --hero-height: 580px;
+}
+
+/* Cinema Hero (Home 1) */
+.cinema-hero {
+  min-height: var(--hero-height) !important;
+  height: auto !important;
+}
+.cinema-hero .cinema-content {
+  min-height: calc(var(--hero-height) - 59px) !important;
+  padding-block: 40px 60px !important;
+  align-items: center;
+}
+
+/* Home 2 Hero */
+body main .home2-training-hero.home2-hero {
+  min-height: var(--hero-height) !important;
+  height: auto !important;
+  justify-content: center;
+}
+.home2-training-hero > .home2-training-grid {
+  min-height: calc(var(--hero-height) - 62px) !important;
+  padding-block: 30px !important;
+  align-items: center;
+}
+
+/* All Inner Pages Hero / Opening Sections */
+body main .story-opening,
+body main .shop-opening,
+body main .services-opening,
+body main .squad-opening,
+body main .brands-opening,
+body main .contact-opening,
+body main .guide-opening.photo-hero,
+body main .service-detail-opening,
+body main .policy-hero {
+  min-height: var(--hero-height) !important;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center !important;
+  padding-block: 40px !important;
+  box-sizing: border-box !important;
+}
+
+body main .story-opening > .container,
+body main .shop-opening > .container,
+body main .services-opening > .container,
+body main .brands-opening > .container,
+body main .contact-opening > .container,
+body main .guide-opening > .container,
+body main .service-detail-opening > .container,
+body main .policy-hero.container {
+  width: min(1340px, calc(100% - 96px));
+  margin-inline: auto;
+}
+
+body main .squad-opening {
+  min-height: var(--hero-height) !important;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  align-items: center !important;
+  padding-block: 0 !important;
+}
+
+body main .squad-opening-photo {
+  min-height: var(--hero-height) !important;
+  height: 100% !important;
+}
+
+body main .brands-opening {
+  min-height: var(--hero-height) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+body main .guide-opening.photo-hero {
+  min-height: var(--hero-height) !important;
+  display: grid !important;
+  align-items: center !important;
+}
+
+/* ============================================================
+   3. HOME PAGE 1: FIND YOUR FIELD ARROW ICONS VISIBILITY
+   ============================================================ */
+#sports .sport-card .sport-card-top {
+  position: relative;
+  z-index: 5;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  width: 100%;
+}
+
+#sports .sport-card .sport-card-top span {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 50% !important;
+  background: #ffffff !important;
+  color: #173d2b !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35) !important;
+  border: 1px solid rgba(255, 255, 255, 0.9) !important;
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1) !important;
+}
+
+#sports .sport-card .sport-card-top span svg {
+  width: 20px !important;
+  height: 20px !important;
+  stroke: currentColor !important;
+  stroke-width: 2.4 !important;
+  transition: transform 0.3s ease !important;
+}
+
+#sports .sport-card:hover .sport-card-top span,
+#sports .sport-card:focus-visible .sport-card-top span {
+  background: var(--brand-orange, #ff4d23) !important;
+  color: #ffffff !important;
+  border-color: var(--brand-orange, #ff4d23) !important;
+  transform: scale(1.12) translate(2px, -2px) !important;
+  box-shadow: 0 8px 24px rgba(255, 77, 35, 0.45) !important;
+}
+
+#sports .sport-card:hover .sport-card-top span svg {
+  transform: translate(2px, -2px) !important;
+}
+
+[data-theme="dark"] #sports .sport-card .sport-card-top span {
+  background: #ffffff !important;
+  color: #111111 !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.55) !important;
+}
+
+[data-theme="dark"] #sports .sport-card:hover .sport-card-top span {
+  background: var(--brand-orange, #ff4d23) !important;
+  color: #ffffff !important;
+}
+
+/* ============================================================
+   4. TEAM ORDERS ACCORDION FUNCTIONALITY FIX
+   ============================================================ */
+.service-faq .faq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start !important;
+  gap: 20px !important;
+}
+
+.service-faq .faq-grid details {
+  align-self: start !important;
+  height: auto !important;
+  transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-faq .faq-grid details[open] {
+  border-color: var(--brand-orange, #ff4d23) !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* ============================================================
+   RESPONSIVE UNIFORMITY (TABLET & MOBILE)
+   ============================================================ */
+@media (max-width: 900px) {
+  :root {
+    --hero-height: 500px;
+    --btn-height: 48px;
+    --btn-padding: 12px 24px;
+    --btn-font-size: 13px;
+  }
+  .cinema-hero .cinema-content {
+    min-height: calc(var(--hero-height) - 50px) !important;
+    padding-block: 30px 40px !important;
+  }
+  .home2-training-hero > .home2-training-grid {
+    min-height: calc(var(--hero-height) - 50px) !important;
+    padding-block: 25px !important;
+  }
+  body main .squad-opening {
+    grid-template-columns: 1fr !important;
+    min-height: auto !important;
+  }
+  body main .squad-opening-photo {
+    min-height: 320px !important;
+  }
+  .service-faq .faq-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --hero-height: auto;
+    --btn-height: 46px;
+    --btn-padding: 12px 20px;
+    --btn-font-size: 13px;
+  }
+  .cinema-hero,
+  .cinema-hero .cinema-content,
+  body main .home2-training-hero.home2-hero,
+  .home2-training-hero > .home2-training-grid,
+  body main .story-opening,
+  body main .shop-opening,
+  body main .services-opening,
+  body main .squad-opening,
+  body main .brands-opening,
+  body main .contact-opening,
+  body main .guide-opening.photo-hero,
+  body main .service-detail-opening,
+  body main .policy-hero {
+    min-height: auto !important;
+    padding-block: 40px 30px !important;
+  }
+}
